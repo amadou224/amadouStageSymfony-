@@ -47,7 +47,7 @@ class HomeController extends AbstractController
 
     ///////////////////////////////  AMADOU TRANSPORT MEMORIAL CONTROLLER  ///////////////////////////////////////
 
-                                       // Route transport // 
+          // Route transport // 
 
     /**
      * @Route("/transport",name="transport")
@@ -93,6 +93,8 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',]);
     }
 
+    // route Acceuil 
+
     /**
      * @Route("/acceuil", name= "acceuil")
      */
@@ -102,7 +104,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',]);
     }
 
-
+    // Route visteDusite du memorial  
 
     /**
      * @Route("/visiteDuSite", name= "visiteDuSite")
@@ -180,6 +182,7 @@ class HomeController extends AbstractController
    
 
     // Terminus reservation aller simple 
+
     /**
      * @Route("/terminusAllerSimple", name="terminusAllerSimple")
      */
@@ -209,7 +212,7 @@ class HomeController extends AbstractController
             'memorial'=>$memorial
         ]);
     }
-
+    
   // FIN CONFIRMATION RESERVATION  ALLER RETOUR    
 
 
