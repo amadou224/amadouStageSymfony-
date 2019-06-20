@@ -3018,3 +3018,7 @@ a23ebf,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561034190,,500
 8c9f16,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561035149,,500
 e7b7ab,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561036813,69f4a9,200
 69f4a9,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561036813,,500
+912824,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=88,1561041311,,200
+b45240,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=88,1561041791,,200
+57662c,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=88,1561041833,,200
+ce05e2,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple?name=confir,1561042482,,200

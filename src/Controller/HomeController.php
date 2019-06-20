@@ -45,107 +45,108 @@ class HomeController extends AbstractController
     }
 
 
-///////////////////////////////  AMADOU TRANSPORT MEMORIAL CONTROLLER  ///////////////////////////////////////
+    ///////////////////////////////  AMADOU TRANSPORT MEMORIAL CONTROLLER  ///////////////////////////////////////
 
                                        // Route transport // 
 
-/**
- * @Route("/transport",name="transport")
- */
-public function  transportRoute()  
-{
-    return $this -> render('transport/transport.html.twig',[
-        'controller_name'=>'HomeController',
-        ]);
+    /**
+     * @Route("/transport",name="transport")
+     */
+    public function  transportRoute()  
+    {
+        return $this -> render('transport/transport.html.twig',[
+            'controller_name'=>'HomeController',
+            ]);
 
-}
+    }
 
-  //  Route pour voir le contact  du client  
+    //  Route pour voir le contact  du client  
 
-/**
- * @Route("/contact", name= "contact")                 
- */
-public function contactRoute()
-{
-    return $this -> render('transport/contact.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/contact", name= "contact")                 
+     */
+    public function contactRoute()
+    {
+        return $this -> render('transport/contact.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
- // Route pour voir les informatiques sur le site  
+    // Route pour voir les informatiques sur le site  
 
-/**
- * @Route("/informations", name= "informations")
- */
-public function informationsRoute()
-{
-    return $this -> render('transport/informations.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/informations", name= "informations")
+     */
+    public function informationsRoute()
+    {
+        return $this -> render('transport/informations.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
-// Route pour voir les tarif sur le site 
-/**
- * @Route("/tarif", name= "tarif")
- */
-public function tarifRoute()
-{
-    return $this -> render('transport/tarif.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    // Route pour voir les tarif sur le site 
 
-/**
- * @Route("/acceuil", name= "acceuil")
- */
-public function acceuilRoute()
-{
-    return $this -> render('transport/acceuil.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/tarif", name= "tarif")
+     */
+    public function tarifRoute()
+    {
+        return $this -> render('transport/tarif.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
-
-
-/**
- * @Route("/visiteDuSite", name= "visiteDuSite")
- */
-public function visiteSiteRoute()
-{
-    return $this -> render('transport/visiteDuSite.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/acceuil", name= "acceuil")
+     */
+    public function acceuilRoute()
+    {
+        return $this -> render('transport/acceuil.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
 
 
-/**
- * @Route("/tarifDuSite", name= "tarifDuSite")
- */
-public function tarifDuSiteRoute()
-{
-    return $this -> render('transport/tarifDuSite.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/visiteDuSite", name= "visiteDuSite")
+     */
+    public function visiteSiteRoute()
+    {
+        return $this -> render('transport/visiteDuSite.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
 
 
-/**
- * @Route("/galerieDuSite", name= "galerieDuSite")
- */
-public function galerieDuSiteRoute()
-{
-    return $this -> render('transport/galerieDuSite.html.twig',[
-        'controller_name' => 'HomeController',]);
-}
+    /**
+     * @Route("/tarifDuSite", name= "tarifDuSite")
+     */
+    public function tarifDuSiteRoute()
+    {
+        return $this -> render('transport/tarifDuSite.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
 
 
-/**
- * @Route("/horaireDuSite",name="horaireDuSite")
- */
-public function horaireDuSiteRoute()
-{
-    return $this -> render('transport/horaireDuSite.html.twig',[
-        'controller_name' =>'HomeController',]);
-    
-}
 
-//////////////////////////      TEST NEW ROUTE  /////////////////////////////////
+    /**
+     * @Route("/galerieDuSite", name= "galerieDuSite")
+     */
+    public function galerieDuSiteRoute()
+    {
+        return $this -> render('transport/galerieDuSite.html.twig',[
+            'controller_name' => 'HomeController',]);
+    }
+
+
+    /**
+     * @Route("/horaireDuSite",name="horaireDuSite")
+     */
+    public function horaireDuSiteRoute()
+    {
+        return $this -> render('transport/horaireDuSite.html.twig',[
+            'controller_name' =>'HomeController',]);
+        
+    }
+
+    //////////////////////////      TEST NEW ROUTE  /////////////////////////////////
 
 
     /**
@@ -159,7 +160,7 @@ public function horaireDuSiteRoute()
         ]);
     }
 
-// ///               twig confirmation reservation ALLER SIMPLE           /////////////
+    //           twig confirmation reservation ALLER SIMPLE           
 
      /**
      * @Route("/confirmation", name="confirmation")
@@ -182,7 +183,7 @@ public function horaireDuSiteRoute()
     /**
      * @Route("/terminusAllerSimple", name="terminusAllerSimple")
      */
-   /*  public function terminusReservationRoute()
+     public function terminusReservationRoute()
     {
 
         // fonction gestion de mail ici -->  
@@ -191,26 +192,10 @@ public function horaireDuSiteRoute()
 
         ]);
 
-    }  */
-/////////////////////////////////////////////////////////////////////
+    }  
 
-    /**
-     * @Route("/terminusAllerSimple", name="terminusAllerSimple")
-     */
-     
-    public function terminusReservationRoute()
-    {
-        $container->loadFromExtension('swiftmailer', [
-            'delivery_addresses' => ['bailofr@hotmail.com'],
-        ]);
-        //////////////////////////////////////
-    
-   
 
-    return $this->render('transport/terminusAllerSimple.html.twig');
-}
-
-///////////////////////////////// TWIG CONFIRMATION ALLER RETOUR   ////////////////////////////////////
+    //                TWIG CONFIRMATION ALLER RETOUR   
 
   /**
      * @Route("/confirmationAllerRetour", name="confirmationAllerRetour")
@@ -225,14 +210,14 @@ public function horaireDuSiteRoute()
         ]);
     }
 
-//////                           FIN CONFIRMATION RESERVATION  ALLER RETOUR    ////////////////////
+  // FIN CONFIRMATION RESERVATION  ALLER RETOUR    
 
 
 
-////////////////////////////// FIN TEST NEW ROUTE ///////////////////////////////
+ //FIN TEST NEW ROUTE 
 
 
-////            recuper en BDD            ///////////////
+ // recuper en BDD            
     
      /**
      * @Route("/envoieBddMemorialAller", name="envoieBddMemorialAller")
@@ -271,7 +256,7 @@ public function horaireDuSiteRoute()
      /**
      * @Route("/envoieBddMemorialAllerRetour", name="envoieBddMemorialAllerRetour")
      */
-    public function envoieBddMemorialAllerRetour(Request $req){                    //:Reponse {   
+    public function envoieBddMemorialAllerRetour(Request $req){                   
         $em = $this->getDoctrine()->getManager();
               $memorial_aller_retour =new MemorialAllerRetour();      
           $depart = $req->get('depart');
@@ -304,7 +289,7 @@ public function horaireDuSiteRoute()
     }
                         
 
-///////////////////////////////// AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT /////////////////////////////////////////////////////
+    //AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT //
 
 
     /**

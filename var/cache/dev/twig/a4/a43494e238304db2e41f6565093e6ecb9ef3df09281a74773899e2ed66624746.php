@@ -215,8 +215,13 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
         echo "
         </div>
             <center>
+
+                <a href=\"terminusAllerSimple?name=confir\" class=\"btn btn-yellow\">confirmer réservation</a>
+                <a href=\"memorialPageAcceuil?name=retour\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
+                    <!-- 
                 <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
+                -->
             </center>
             
           
@@ -252,7 +257,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
     }
 
-    // line 122
+    // line 127
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -261,7 +266,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 123
+        // line 128
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -286,7 +291,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
     public function getDebugInfo()
     {
-        return array (  265 => 123,  256 => 122,  215 => 89,  210 => 86,  206 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  188 => 80,  184 => 79,  180 => 78,  176 => 77,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  270 => 128,  261 => 127,  215 => 89,  210 => 86,  206 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  188 => 80,  184 => 79,  180 => 78,  176 => 77,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -382,8 +387,13 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
         </div>
             <center>
+
+                <a href=\"terminusAllerSimple?name=confir\" class=\"btn btn-yellow\">confirmer réservation</a>
+                <a href=\"memorialPageAcceuil?name=retour\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
+                    <!-- 
                 <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
+                -->
             </center>
             
           
