@@ -46,10 +46,13 @@ class HomeController extends AbstractController
 
 
 ///////////////////////////////  AMADOU TRANSPORT MEMORIAL CONTROLLER  ///////////////////////////////////////
+
+                                       // Route transport // 
+
 /**
  * @Route("/transport",name="transport")
  */
-public function  transportRoute()
+public function  transportRoute()  
 {
     return $this -> render('transport/transport.html.twig',[
         'controller_name'=>'HomeController',
@@ -57,14 +60,18 @@ public function  transportRoute()
 
 }
 
+  //  Route pour voir le contact  du client  
+
 /**
- * @Route("/contact", name= "contact")
+ * @Route("/contact", name= "contact")                 
  */
 public function contactRoute()
 {
     return $this -> render('transport/contact.html.twig',[
         'controller_name' => 'HomeController',]);
 }
+
+ // Route pour voir les informatiques sur le site  
 
 /**
  * @Route("/informations", name= "informations")
@@ -75,6 +82,7 @@ public function informationsRoute()
         'controller_name' => 'HomeController',]);
 }
 
+// Route pour voir les tarif sur le site 
 /**
  * @Route("/tarif", name= "tarif")
  */
@@ -168,12 +176,13 @@ public function horaireDuSiteRoute()
             
         ]);
     }
+   
 
     // Terminus reservation aller simple 
     /**
      * @Route("/terminusAllerSimple", name="terminusAllerSimple")
      */
-    public function terminusReservationRoute()
+   /*  public function terminusReservationRoute()
     {
 
         // fonction gestion de mail ici -->  
@@ -182,7 +191,24 @@ public function horaireDuSiteRoute()
 
         ]);
 
-    }  
+    }  */
+/////////////////////////////////////////////////////////////////////
+
+    /**
+     * @Route("/terminusAllerSimple", name="terminusAllerSimple")
+     */
+     
+    public function terminusReservationRoute()
+    {
+        $container->loadFromExtension('swiftmailer', [
+            'delivery_addresses' => ['bailofr@hotmail.com'],
+        ]);
+        //////////////////////////////////////
+    
+   
+
+    return $this->render('transport/terminusAllerSimple.html.twig');
+}
 
 ///////////////////////////////// TWIG CONFIRMATION ALLER RETOUR   ////////////////////////////////////
 
