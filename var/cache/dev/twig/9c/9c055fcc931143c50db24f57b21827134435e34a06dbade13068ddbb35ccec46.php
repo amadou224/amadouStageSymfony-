@@ -111,88 +111,78 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
 
         // line 17
         echo "
-
 <div class=\"text-center\">
     <div class=\"p-lg-5\">
         <img class=\"img-top-body\" src=\"images/logo_royal_palace.jpg\">
     </div>
-
         <div class=\"col-md-8 mx-auto mt-3\">
         <h1>Vos informations sont elles excates ?</h1>
         <hr class=\"py-3\">
-
-
-
-
-
-
 <div style=\"text-align:center\">
                 <h5><strong>Lieu de départ:</strong>&nbsp";
-        // line 34
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 34, $this->source); })()), "depart", []), "html", null, true);
+        // line 26
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 26, $this->source); })()), "depart", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Destination:</strong>&nbsp";
-        // line 35
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 35, $this->source); })()), "destination", []), "html", null, true);
+        // line 27
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 27, $this->source); })()), "destination", []), "html", null, true);
         echo "</h5></br>       
                 <h5><strong>E-mail:</strong>&nbsp";
-        // line 36
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 36, $this->source); })()), "email", []), "html", null, true);
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 28, $this->source); })()), "email", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Téléphone:</strong>&nbsp";
-        // line 37
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 37, $this->source); })()), "telephone", []), "html", null, true);
+        // line 29
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 29, $this->source); })()), "telephone", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Nombre de passagers Aller:</strong>&nbsp";
-        // line 38
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 38, $this->source); })()), "nbrePassagerAller", []), "html", null, true);
+        // line 30
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 30, $this->source); })()), "nbrePassagerAller", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Nombre de passagers Rétour:</strong>&nbsp";
-        // line 39
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 39, $this->source); })()), "nbrePassagerRetour", []), "html", null, true);
+        // line 31
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 31, $this->source); })()), "nbrePassagerRetour", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Date de départ:</strong>&nbsp";
-        // line 40
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 40, $this->source); })()), "dateDepart", []), "d/m/Y"), "html", null, true);
+        // line 32
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 32, $this->source); })()), "dateDepart", []), "d/m/Y"), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Date de rétour:</strong>&nbsp";
-        // line 41
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 41, $this->source); })()), "dateRetour", []), "d/m/Y"), "html", null, true);
+        // line 33
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 33, $this->source); })()), "dateRetour", []), "d/m/Y"), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Heure de départ:</strong>&nbsp";
-        // line 42
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 42, $this->source); })()), "horaireDepart", []), "html", null, true);
+        // line 34
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 34, $this->source); })()), "horaireDepart", []), "html", null, true);
         echo "</h5></br>
                 <h5><strong>Heure de rétour:</strong>&nbsp";
-        // line 43
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 43, $this->source); })()), "horaireRetour", []), "html", null, true);
+        // line 35
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 35, $this->source); })()), "horaireRetour", []), "html", null, true);
         echo "</h5></br>  
 
                 ";
-        // line 45
-        if (((twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 45, $this->source); })()), "nbrePassagerAller", []) <= 4) && (twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 45, $this->source); })()), "nbrePassagerRetour", []) <= 4))) {
-            // line 46
+        // line 37
+        if (((twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 37, $this->source); })()), "nbrePassagerAller", []) <= 4) && (twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 37, $this->source); })()), "nbrePassagerRetour", []) <= 4))) {
+            // line 38
             echo "                <h5><strong>Prix:</strong>&nbsp 160€</h5></br>
                 ";
         } else {
-            // line 47
+            // line 39
             echo " 
                 <h5><strong>Prix:</strong>&nbsp 300€</h5></br>
                 ";
         }
-        // line 50
+        // line 42
         echo "          </div>
             <center>
-                <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
-                <a href=\"royalpalacereservation\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
+                <a href=\"reservationEffectuee?name=confir\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
+                <a href=\"royalpalacereservation?name=retour\" class=\"btn btn-yellow\"  >Réfaire votre réservation</a>
             </center>    
 
-                                        <!--
+                   <!--
                  <a href=\"terminusAllerSimple?name=confir\" class=\"btn btn-yellow\">confirmer réservation</a>
                 <a href=\"memorialPageAcceuil?name=retour\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
-
-
-                                    -->
+                  -->
 
 
 
@@ -228,7 +218,7 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
 
     }
 
-    // line 90
+    // line 80
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -237,7 +227,7 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 91
+        // line 81
         echo "
     <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -262,7 +252,7 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
 
     public function getDebugInfo()
     {
-        return array (  241 => 91,  232 => 90,  184 => 50,  179 => 47,  175 => 46,  173 => 45,  168 => 43,  164 => 42,  160 => 41,  156 => 40,  152 => 39,  148 => 38,  144 => 37,  140 => 36,  136 => 35,  132 => 34,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
+        return array (  231 => 81,  222 => 80,  176 => 42,  171 => 39,  167 => 38,  165 => 37,  160 => 35,  156 => 34,  152 => 33,  148 => 32,  144 => 31,  140 => 30,  136 => 29,  132 => 28,  128 => 27,  124 => 26,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -284,21 +274,13 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
 
 {% block body %}
 
-
 <div class=\"text-center\">
     <div class=\"p-lg-5\">
         <img class=\"img-top-body\" src=\"images/logo_royal_palace.jpg\">
     </div>
-
         <div class=\"col-md-8 mx-auto mt-3\">
         <h1>Vos informations sont elles excates ?</h1>
         <hr class=\"py-3\">
-
-
-
-
-
-
 <div style=\"text-align:center\">
                 <h5><strong>Lieu de départ:</strong>&nbsp{{royalpalace.depart}}</h5></br>
                 <h5><strong>Destination:</strong>&nbsp{{royalpalace.destination}}</h5></br>       
@@ -311,23 +293,21 @@ class __TwigTemplate_849dc18f2faa0d5e68e711dcd2a285c16356a081be200d6ffd496754e0a
                 <h5><strong>Heure de départ:</strong>&nbsp{{royalpalace.horaireDepart}}</h5></br>
                 <h5><strong>Heure de rétour:</strong>&nbsp{{royalpalace.horaireRetour}}</h5></br>  
 
-                {% if  (royalpalace.nbrePassagerAller <=4) and (royalpalace.nbrePassagerRetour <=4)  %}
+                {% if (royalpalace.nbrePassagerAller <=4) and (royalpalace.nbrePassagerRetour <= 4)  %}
                 <h5><strong>Prix:</strong>&nbsp 160€</h5></br>
                 {% else %} 
                 <h5><strong>Prix:</strong>&nbsp 300€</h5></br>
                 {% endif %}
           </div>
             <center>
-                <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
-                <a href=\"royalpalacereservation\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
+                <a href=\"reservationEffectuee?name=confir\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
+                <a href=\"royalpalacereservation?name=retour\" class=\"btn btn-yellow\"  >Réfaire votre réservation</a>
             </center>    
 
-                                        <!--
+                   <!--
                  <a href=\"terminusAllerSimple?name=confir\" class=\"btn btn-yellow\">confirmer réservation</a>
                 <a href=\"memorialPageAcceuil?name=retour\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
-
-
-                                    -->
+                  -->
 
 
 
