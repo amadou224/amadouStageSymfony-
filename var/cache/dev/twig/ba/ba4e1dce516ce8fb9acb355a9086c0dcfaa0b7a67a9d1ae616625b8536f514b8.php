@@ -152,12 +152,13 @@ class __TwigTemplate_a98a5f807857475251648af8046c2b7b01f502c6c67315a0ee7c99538c6
         avec le Moulin Rouge et le Lido.
         <br>
         <br>Il accueille 230.000 spectateurs tous les ans.
-    </p>
+    </p></br>
+    <center>
     <a href=\"";
-        // line 60
+        // line 61
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("royalpalacereservation");
-        echo "\">Réservation Navette</a>
-
+        echo "\"><input type=\"button\"  class=\"btn btn-yellow\"  value=\"Réservation Navette\"</a>
+    </center>
     </body>
 
 
@@ -190,7 +191,7 @@ class __TwigTemplate_a98a5f807857475251648af8046c2b7b01f502c6c67315a0ee7c99538c6
 
     }
 
-    // line 87
+    // line 88
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -199,7 +200,7 @@ class __TwigTemplate_a98a5f807857475251648af8046c2b7b01f502c6c67315a0ee7c99538c6
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 88
+        // line 89
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -224,7 +225,7 @@ class __TwigTemplate_a98a5f807857475251648af8046c2b7b01f502c6c67315a0ee7c99538c6
 
     public function getDebugInfo()
     {
-        return array (  203 => 88,  194 => 87,  158 => 60,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
+        return array (  204 => 89,  195 => 88,  159 => 61,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -287,9 +288,10 @@ class __TwigTemplate_a98a5f807857475251648af8046c2b7b01f502c6c67315a0ee7c99538c6
         avec le Moulin Rouge et le Lido.
         <br>
         <br>Il accueille 230.000 spectateurs tous les ans.
-    </p>
-    <a href=\"{{ path('royalpalacereservation') }}\">Réservation Navette</a>
-
+    </p></br>
+    <center>
+    <a href=\"{{ path('royalpalacereservation') }}\"><input type=\"button\"  class=\"btn btn-yellow\"  value=\"Réservation Navette\"</a>
+    </center>
     </body>
 
 

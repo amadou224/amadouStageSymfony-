@@ -148,7 +148,7 @@ class HomeController extends AbstractController
         
     }
 
-    //////////////////////////      TEST NEW ROUTE  /////////////////////////////////
+    //     TEST NEW ROUTE  
 
 
     /**
@@ -162,7 +162,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    //           twig confirmation reservation ALLER SIMPLE           
+    //           twig confirmation reservation Memorial  ALLER SIMPLE           
 
      /**
      * @Route("/confirmation", name="confirmation")
@@ -179,9 +179,27 @@ class HomeController extends AbstractController
             
         ]);
     }
+
+    
+    //                TWIG CONFIRMATION ALLER RETOUR transport Memorial 
+
+  /**
+     * @Route("/confirmationAllerRetour", name="confirmationAllerRetour")
+     */
+    public function confirmationAllerRetourRoute(Request $request)
+    {
+        $repo = $this->getDoctrine()->getRepository(MemorialAllerRetour::class);  
+
+        $memorial = $repo->find($request->get('id'));
+        return $this->render('transport/confirmationAllerRetour.html.twig', [
+            'memorial'=>$memorial
+        ]);
+    }
+    
+  // FIN CONFIRMATION RESERVATION  ALLER RETOUR    
    
 
-    // Terminus reservation aller simple 
+    // Terminus reservation Memorial aller simple 
 
     /**
      * @Route("/terminusAllerSimple", name="terminusAllerSimple")
@@ -198,29 +216,13 @@ class HomeController extends AbstractController
     }  
 
 
-    //                TWIG CONFIRMATION ALLER RETOUR   
-
-  /**
-     * @Route("/confirmationAllerRetour", name="confirmationAllerRetour")
-     */
-    public function confirmationAllerRetourRoute(Request $request)
-    {
-        $repo = $this->getDoctrine()->getRepository(MemorialAllerRetour::class);  
-
-        $memorial = $repo->find($request->get('id'));
-        return $this->render('transport/confirmationAllerRetour.html.twig', [
-            'memorial'=>$memorial
-        ]);
-    }
-    
-  // FIN CONFIRMATION RESERVATION  ALLER RETOUR    
 
 
 
  //FIN TEST NEW ROUTE 
 
 
- // recuper en BDD            
+ // Envoie en BDD reservation transport Memorial            
     
      /**
      * @Route("/envoieBddMemorialAller", name="envoieBddMemorialAller")
@@ -253,7 +255,7 @@ class HomeController extends AbstractController
         return $this->redirectToRoute('confirmation',['id'=>$memorial_aller->getId()]);
     } 
     
-    //          RECUPERATION EN BDD ALLER RETOUR       //  
+    //          RECUPERATION EN BDD ALLER RETOUR Memorial       //  
 
     
      /**
@@ -292,7 +294,7 @@ class HomeController extends AbstractController
     }
                         
 
-    //AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT //
+            ////    AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
 
 
     /**

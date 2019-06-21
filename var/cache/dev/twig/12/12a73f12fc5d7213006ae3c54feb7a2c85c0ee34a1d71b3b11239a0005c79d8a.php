@@ -145,9 +145,9 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
         </div>
 
         <div style=\"display: none;\" id=\"FormAllerSimple\">
-            <form class=\"needs-validation\" name=\"formReservation\" method=\"get\" action=\"";
+            <form class=\"needs-validation\" name=\"formReservation\" method=\"post\" action=\"";
         // line 52
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservationAller");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddRoyalPalaceAller");
         echo "\"
                   novalidate>
                 <div class=\"d-flex justify-content-center\">
@@ -156,14 +156,12 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                             <label for=\"\">Départ</label>
                             <select class=\"form-control\" style=\"text-align:center;\" name=\"depart_aller\" onclick=\"PointdePrise()\">
                                 <option value=\"\">Choisir un point de prise</option>
-                                <option value=\"Strasbourg\">Strasbourg</option>
-                                <option value=\"2\">Bruxelle</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                                <option value=\"Gare Centrale\">Gare Centrale</option>
+                                <option value=\"Hotel Hilton\">Hotel Hilton</option>
+                                <option value=\"Palais des droits de l'homme\">Palais des droits de l'homme</option>
+                                <option value=\"Bruxelles\">Bruxelles</option>
+                                <option value=\"Luxembourg\">Luxembourg</option>
+                               >
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -174,7 +172,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         <div>
                             <label for=\"\">Destination</label>
                             <select class=\"form-control\" name=\"destination_aller\" required>
-                                <option value=\"1\">Royal Palace</option>
+                                <option value=\"royalPalace\">Royal Palace</option>
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -211,31 +209,49 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
 
                 </div>
 
+                    <div class=\"d-flex justify-content-center\">     <div class=\"col-md-6 mb-3\">    
+                    <div class=\"form-group\">
+                        <label for=\"exampleInputEmail1\">Email adresse</label>
+                        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" name=\"email\">
+                        
+                    </div> 
+                    </div>
+                    </div>    
 
-                <div class=\"d-flex justify-content-center\">
-                    <div class=\"col-md-6 mb-3\">
-                        <div class=\"form-group\">
-                            <label for=\"\">Date de départ</label>
-                            <input type=\"date\" class=\"form-control\" name=\"date_depart_aller\" required>
+                        <div class=\"d-flex justify-content-center\">
+                            <div class=\"col-md-6 mb-3\">
+                            <div class=\"form-group\">
+                                <label for=\"phone\">Téléphone:</label>
+                                <input type=\"text\"class=\"form-control\" placeholder=\"Téléphone\" name=\"phone\">
+                            </div>
                         </div>
-                        <div class=\"invalid-feedback\">
-                            Please choose a number.
+                        </div>           
+
+                    <div class=\"d-flex justify-content-center\">
+                        <div class=\"col-md-6 mb-3\">
+                            <div class=\"form-group\">
+                                <label for=\"\">Date de départ</label>
+                                <input type=\"date\" class=\"form-control\" name=\"date_depart_aller\" required>
+                            </div>
+                            <div class=\"invalid-feedback\">
+                                Please choose a number.
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class=\"d-flex justify-content-center\">
                     <div class=\"col-md-6 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de départ fixées par la société</label>
                             <select class=\"form-control\" name=\"horraire_depart_aller\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                              
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"16H30\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">
@@ -293,24 +309,22 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
 
         <div style=\"display: none;\" id=\"FormAllerRetour\">
             <form class=\"needs-validation\" method=\"get\" action=\"";
-        // line 196
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation");
+        // line 212
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddRoyalPalaceAllerRetour");
         echo "\" novalidate>
 
                 <div class=\"d-flex justify-content-center\">
                     <div class=\"col-md-6 mb-3\">
                         <div>
                             <label for=\"\">Départ</label>
+                            
                             <select class=\"form-control\" name=\"depart\" style=\"text-align:center;\" onclick=\"PointdePrise2()\">
-                                <option value=\"\">Choisir un point de prise</option>
-                                <option value=\"Strasbourg\">Strasbourg</option>
-                                <option value=\"Bruxelle\">Bruxelle</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                                 <option value=\"\">Choisir un point de prise</option>
+                                <option value=\"Gare Centrale\">Gare Centrale</option>
+                                <option value=\"Hotel Hilton\">Hotel Hilton</option>
+                                <option value=\"Palais des droits de l'homme\">Palais des droits de l'homme</option>
+                                <option value=\"Bruxelles\">Bruxelles</option>
+                                <option value=\"Luxembourg\">Luxembourg</option>
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -329,6 +343,24 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         </div>
                     </div>
                 </div>
+                
+                  <div class=\"d-flex justify-content-center\">     <div class=\"col-md-6 mb-3\">    
+                  <div class=\"form-group\">
+                    <label for=\"exampleInputEmail1\">Email adresse</label>
+                    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" name=\"email\">
+                    
+                  </div> 
+                  </div>
+                  </div>    
+
+                    <div class=\"d-flex justify-content-center\">
+                        <div class=\"col-md-6 mb-3\">
+                           <div class=\"form-group\">
+                               <label for=\"phone\">Téléphone:</label>
+                               <input type=\"text\"class=\"form-control\" placeholder=\"Téléphone\" name=\"phone\">
+                          </div>
+                      </div>
+                    </div>           
 
 
                 <hr>
@@ -360,7 +392,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         <div>
                             <label for=\"\">Nombre de Passager</label>
                             <select class=\"form-control\" name=\"nb_passager_2\" value=\"pareil\" required>
-                                <option value=\"undefined\">Pareil</option>
+                               
                                 <option value=\"1\">1</option>
                                 <option value=\"2\">2</option>
                                 <option value=\"3\">3</option>
@@ -403,15 +435,16 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                     <div class=\"col-md-4 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de départ fixées par la société</label>
-                            <select class=\"form-control\" name=\"horraire_depart\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                            <select class=\"form-control\" name=\"horaire_depart\">
+                            
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"16H30<\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">
@@ -421,15 +454,16 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                     <div class=\"col-md-4 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de retour fixées par la société</label>
-                            <select class=\"form-control\" name=\"horraire_retour\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                            <select class=\"form-control\" name=\"horaire_retour\">
+                              
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"15H30\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">
@@ -520,7 +554,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
 
     }
 
-    // line 414
+    // line 448
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -529,7 +563,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 415
+        // line 449
         echo "
     <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -554,7 +588,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
 
     public function getDebugInfo()
     {
-        return array (  533 => 415,  524 => 414,  297 => 196,  150 => 52,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
+        return array (  567 => 449,  558 => 448,  313 => 212,  150 => 52,  113 => 17,  104 => 16,  92 => 12,  83 => 11,  68 => 4,  59 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -610,7 +644,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
         </div>
 
         <div style=\"display: none;\" id=\"FormAllerSimple\">
-            <form class=\"needs-validation\" name=\"formReservation\" method=\"get\" action=\"{{ path('reservationAller')}}\"
+            <form class=\"needs-validation\" name=\"formReservation\" method=\"post\" action=\"{{ path('envoieBddRoyalPalaceAller')}}\"
                   novalidate>
                 <div class=\"d-flex justify-content-center\">
                     <div class=\"col-md-6 mb-3\">
@@ -618,14 +652,12 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                             <label for=\"\">Départ</label>
                             <select class=\"form-control\" style=\"text-align:center;\" name=\"depart_aller\" onclick=\"PointdePrise()\">
                                 <option value=\"\">Choisir un point de prise</option>
-                                <option value=\"Strasbourg\">Strasbourg</option>
-                                <option value=\"2\">Bruxelle</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                                <option value=\"Gare Centrale\">Gare Centrale</option>
+                                <option value=\"Hotel Hilton\">Hotel Hilton</option>
+                                <option value=\"Palais des droits de l'homme\">Palais des droits de l'homme</option>
+                                <option value=\"Bruxelles\">Bruxelles</option>
+                                <option value=\"Luxembourg\">Luxembourg</option>
+                               >
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -636,7 +668,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         <div>
                             <label for=\"\">Destination</label>
                             <select class=\"form-control\" name=\"destination_aller\" required>
-                                <option value=\"1\">Royal Palace</option>
+                                <option value=\"royalPalace\">Royal Palace</option>
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -673,31 +705,49 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
 
                 </div>
 
+                    <div class=\"d-flex justify-content-center\">     <div class=\"col-md-6 mb-3\">    
+                    <div class=\"form-group\">
+                        <label for=\"exampleInputEmail1\">Email adresse</label>
+                        <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" name=\"email\">
+                        
+                    </div> 
+                    </div>
+                    </div>    
 
-                <div class=\"d-flex justify-content-center\">
-                    <div class=\"col-md-6 mb-3\">
-                        <div class=\"form-group\">
-                            <label for=\"\">Date de départ</label>
-                            <input type=\"date\" class=\"form-control\" name=\"date_depart_aller\" required>
+                        <div class=\"d-flex justify-content-center\">
+                            <div class=\"col-md-6 mb-3\">
+                            <div class=\"form-group\">
+                                <label for=\"phone\">Téléphone:</label>
+                                <input type=\"text\"class=\"form-control\" placeholder=\"Téléphone\" name=\"phone\">
+                            </div>
                         </div>
-                        <div class=\"invalid-feedback\">
-                            Please choose a number.
+                        </div>           
+
+                    <div class=\"d-flex justify-content-center\">
+                        <div class=\"col-md-6 mb-3\">
+                            <div class=\"form-group\">
+                                <label for=\"\">Date de départ</label>
+                                <input type=\"date\" class=\"form-control\" name=\"date_depart_aller\" required>
+                            </div>
+                            <div class=\"invalid-feedback\">
+                                Please choose a number.
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class=\"d-flex justify-content-center\">
                     <div class=\"col-md-6 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de départ fixées par la société</label>
                             <select class=\"form-control\" name=\"horraire_depart_aller\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                              
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"16H30\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">
@@ -754,22 +804,20 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
         </div>
 
         <div style=\"display: none;\" id=\"FormAllerRetour\">
-            <form class=\"needs-validation\" method=\"get\" action=\"{{ path('reservation')}}\" novalidate>
+            <form class=\"needs-validation\" method=\"get\" action=\"{{ path('envoieBddRoyalPalaceAllerRetour')}}\" novalidate>
 
                 <div class=\"d-flex justify-content-center\">
                     <div class=\"col-md-6 mb-3\">
                         <div>
                             <label for=\"\">Départ</label>
+                            
                             <select class=\"form-control\" name=\"depart\" style=\"text-align:center;\" onclick=\"PointdePrise2()\">
-                                <option value=\"\">Choisir un point de prise</option>
-                                <option value=\"Strasbourg\">Strasbourg</option>
-                                <option value=\"Bruxelle\">Bruxelle</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                                 <option value=\"\">Choisir un point de prise</option>
+                                <option value=\"Gare Centrale\">Gare Centrale</option>
+                                <option value=\"Hotel Hilton\">Hotel Hilton</option>
+                                <option value=\"Palais des droits de l'homme\">Palais des droits de l'homme</option>
+                                <option value=\"Bruxelles\">Bruxelles</option>
+                                <option value=\"Luxembourg\">Luxembourg</option>
                             </select>
                             <div class=\"invalid-feedback\">
                                 Please choose a number.
@@ -788,6 +836,24 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         </div>
                     </div>
                 </div>
+                
+                  <div class=\"d-flex justify-content-center\">     <div class=\"col-md-6 mb-3\">    
+                  <div class=\"form-group\">
+                    <label for=\"exampleInputEmail1\">Email adresse</label>
+                    <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" name=\"email\">
+                    
+                  </div> 
+                  </div>
+                  </div>    
+
+                    <div class=\"d-flex justify-content-center\">
+                        <div class=\"col-md-6 mb-3\">
+                           <div class=\"form-group\">
+                               <label for=\"phone\">Téléphone:</label>
+                               <input type=\"text\"class=\"form-control\" placeholder=\"Téléphone\" name=\"phone\">
+                          </div>
+                      </div>
+                    </div>           
 
 
                 <hr>
@@ -819,7 +885,7 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                         <div>
                             <label for=\"\">Nombre de Passager</label>
                             <select class=\"form-control\" name=\"nb_passager_2\" value=\"pareil\" required>
-                                <option value=\"undefined\">Pareil</option>
+                               
                                 <option value=\"1\">1</option>
                                 <option value=\"2\">2</option>
                                 <option value=\"3\">3</option>
@@ -862,15 +928,16 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                     <div class=\"col-md-4 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de départ fixées par la société</label>
-                            <select class=\"form-control\" name=\"horraire_depart\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                            <select class=\"form-control\" name=\"horaire_depart\">
+                            
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"16H30<\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">
@@ -880,15 +947,16 @@ class __TwigTemplate_5dacacad24123eca0e820bc075b7c7cbb6f614bb37a064a46f4a32bb98b
                     <div class=\"col-md-4 mb-3\">
                         <div class=\"form-group\">
                             <label for=\"\">Horaires de retour fixées par la société</label>
-                            <select class=\"form-control\" name=\"horraire_retour\">
-                                <option value=\"1\">HEURE</option>
-                                <option value=\"2\">2</option>
-                                <option value=\"3\">3</option>
-                                <option value=\"4\">4</option>
-                                <option value=\"5\">5</option>
-                                <option value=\"6\">6</option>
-                                <option value=\"7\">7</option>
-                                <option value=\"8\">8</option>
+                            <select class=\"form-control\" name=\"horaire_retour\">
+                              
+                                <option value=\"08H30\">08H30</option>
+                                <option value=\"09H30\">09H30</option>
+                                <option value=\"10H30\">10H30</option>
+                                <option value=\"11H30\">11H30</option>
+                                <option value=\"13H30\">13H30</option>
+                                <option value=\"14H30\">14H30</option>
+                                <option value=\"15H30\">15H30</option>
+                                <option value=\"15H30\">16H30</option>
                             </select>
                         </div>
                         <div class=\"invalid-feedback\">

@@ -821,6 +821,14 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id="App\Repository\RoyalPalaceAllerRepository" class="App\Repository\RoyalPalaceAllerRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\RoyalPalaceAllerRetourRepository" class="App\Repository\RoyalPalaceAllerRetourRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="App\Repository\SupplementRepository" class="App\Repository\SupplementRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -3245,7 +3253,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.UzJ6YHJ"/>
+      <argument type="service" id=".service_locator.KIiCnK7"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -5133,6 +5141,10 @@
     <service id=".abstract.instanceof.App\Repository\MessageRepository" class="App\Repository\MessageRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ReservationRepository" class="App\Repository\ReservationRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ReservationRepository" class="App\Repository\ReservationRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\RoyalPalaceAllerRepository" class="App\Repository\RoyalPalaceAllerRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\RoyalPalaceAllerRepository" class="App\Repository\RoyalPalaceAllerRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\RoyalPalaceAllerRetourRepository" class="App\Repository\RoyalPalaceAllerRetourRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\RoyalPalaceAllerRetourRepository" class="App\Repository\RoyalPalaceAllerRetourRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\SupplementRepository" class="App\Repository\SupplementRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\SupplementRepository" class="App\Repository\SupplementRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\TrajetRepository" class="App\Repository\TrajetRepository" autowire="true" abstract="true"/>
@@ -5416,7 +5428,7 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.UzJ6YHJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.KIiCnK7" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\ChauffeurRepository" type="service" id="App\Repository\ChauffeurRepository"/>
@@ -5427,6 +5439,8 @@
         <argument key="App\Repository\MemorialAllerRetourRepository" type="service" id="App\Repository\MemorialAllerRetourRepository"/>
         <argument key="App\Repository\MessageRepository" type="service" id="App\Repository\MessageRepository"/>
         <argument key="App\Repository\ReservationRepository" type="service" id="App\Repository\ReservationRepository"/>
+        <argument key="App\Repository\RoyalPalaceAllerRepository" type="service" id="App\Repository\RoyalPalaceAllerRepository"/>
+        <argument key="App\Repository\RoyalPalaceAllerRetourRepository" type="service" id="App\Repository\RoyalPalaceAllerRetourRepository"/>
         <argument key="App\Repository\SupplementRepository" type="service" id="App\Repository\SupplementRepository"/>
         <argument key="App\Repository\TrajetRepository" type="service" id="App\Repository\TrajetRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>

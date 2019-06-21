@@ -99,7 +99,7 @@ class __TwigTemplate_2c342261a664f0cd2da1e028d350d6b439b25d958c43552bd071c29ce0a
 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"memorialPageAcceuil\"> Mémorial struthof </a> <!--href=\"/transport\"-->
+                    <a class=\"nav-link\" href=\"memorialPageAcceuil\"> Mémorial struthof </a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"#\">Shopping Shuttle</a>
@@ -613,7 +613,7 @@ class __TwigTemplate_2c342261a664f0cd2da1e028d350d6b439b25d958c43552bd071c29ce0a
 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"memorialPageAcceuil\"> Mémorial struthof </a> <!--href=\"/transport\"-->
+                    <a class=\"nav-link\" href=\"memorialPageAcceuil\"> Mémorial struthof </a>
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"#\">Shopping Shuttle</a>

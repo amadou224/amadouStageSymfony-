@@ -260,11 +260,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     
                   </div> 
                   </div>
-                  </div>
-
-
-
-    
+                  </div>    
 
                     <div class=\"d-flex justify-content-center\">
                         <div class=\"col-md-6 mb-3\">
@@ -362,7 +358,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
         <div style=\"display: none;\" id=\"FormAllerRetour\">
             <form class=\"needs-validation\" method=\"get\" action=\"";
-        // line 264
+        // line 260
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddMemorialAllerRetour");
         echo "\" novalidate>
 
@@ -388,7 +384,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     <div class=\"col-md-6 mb-3\">
                         <div>
                             <label for=\"\">Destination</label>
-                            <select class=\"form-control\" name=\"destination\" required>
+                            <select class=\"form-control\" name=\"destination\"  required>
                                 <option value=\"Mémorial Struthof\">Mémorial Struthof</option>
                                
                             </select>
@@ -554,22 +550,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     <center>
                       <input type=\"submit\"   class=\"btn btn-yellow\"   value=\"Reserver\" />
                     </center>
-              <!--  ";
-        // line 454
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 454, $this->source); })()), "user", [])) {
-            echo "   -->
-               <!--    <button class=\"btn btn-yellow\"  type=\"submit\">Réserver</button>      disabled-->
-              <!--<a href=\"confirmationAllerRetour\" class=\"btn btn-yellow\"  type=\"submit\">Réserver</a> 
-                ";
-        } else {
-            // line 457
-            echo "  -->
-               <!-- <button  class=\"btn btn-yellow\" type=\"submit\" >Réserver </button>      -->
-               <!-- <a href=\"confirmationAllerRetour\" class=\"btn btn-yellow\"  type=\"submit\">Réserver</a>  -->
-               <!-- ";
-        }
-        // line 460
-        echo "         -->
+            
 
 
             </form>
@@ -608,7 +589,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     }
 
-    // line 492
+    // line 482
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -617,7 +598,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 493
+        // line 483
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -642,7 +623,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     public function getDebugInfo()
     {
-        return array (  621 => 493,  612 => 492,  572 => 460,  566 => 457,  559 => 454,  366 => 264,  199 => 100,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  602 => 483,  593 => 482,  362 => 260,  199 => 100,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -809,11 +790,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     
                   </div> 
                   </div>
-                  </div>
-
-
-
-    
+                  </div>    
 
                     <div class=\"d-flex justify-content-center\">
                         <div class=\"col-md-6 mb-3\">
@@ -934,7 +911,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     <div class=\"col-md-6 mb-3\">
                         <div>
                             <label for=\"\">Destination</label>
-                            <select class=\"form-control\" name=\"destination\" required>
+                            <select class=\"form-control\" name=\"destination\"  required>
                                 <option value=\"Mémorial Struthof\">Mémorial Struthof</option>
                                
                             </select>
@@ -1100,13 +1077,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
                     <center>
                       <input type=\"submit\"   class=\"btn btn-yellow\"   value=\"Reserver\" />
                     </center>
-              <!--  {% if app.user %}   -->
-               <!--    <button class=\"btn btn-yellow\"  type=\"submit\">Réserver</button>      disabled-->
-              <!--<a href=\"confirmationAllerRetour\" class=\"btn btn-yellow\"  type=\"submit\">Réserver</a> 
-                {% else %}  -->
-               <!-- <button  class=\"btn btn-yellow\" type=\"submit\" >Réserver </button>      -->
-               <!-- <a href=\"confirmationAllerRetour\" class=\"btn btn-yellow\"  type=\"submit\">Réserver</a>  -->
-               <!-- {% endif %}         -->
+            
 
 
             </form>
