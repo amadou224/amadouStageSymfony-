@@ -170,20 +170,17 @@ class HomeController extends AbstractController
     public function confirmationRoute(Request $request)
     {      
         $repo = $this->getDoctrine()->getRepository(MemorialAller::class);      
-        $memorial = $repo->find($request->get('id'));           
-
+        $memorial = $repo->find($request->get('id'));          
      
-        return   $this->render('transport/confirmation.html.twig', [
-            
+        return   $this->render('transport/confirmation.html.twig', [           
             'memorial'=>$memorial
             
         ]);
     }
-
     
-    //                TWIG CONFIRMATION ALLER RETOUR transport Memorial 
+    //TWIG CONFIRMATION ALLER RETOUR transport Memorial 
 
-  /**
+     /**
      * @Route("/confirmationAllerRetour", name="confirmationAllerRetour")
      */
     public function confirmationAllerRetourRoute(Request $request)
@@ -196,8 +193,7 @@ class HomeController extends AbstractController
         ]);
     }
     
-  // FIN CONFIRMATION RESERVATION  ALLER RETOUR    
-   
+  // FIN CONFIRMATION RESERVATION  ALLER RETOUR      
 
     // Terminus reservation Memorial aller simple 
 
@@ -205,19 +201,30 @@ class HomeController extends AbstractController
      * @Route("/terminusAllerSimple", name="terminusAllerSimple")
      */
      public function terminusReservationRoute()
-    {
-
-        // fonction gestion de mail ici -->  
-    
+    {             
         return $this->render('transport/terminusAllerSimple.html.twig',[
-
         ]);
-
     }  
 
+    // GESTION EMAIL CONTROLLER  
 
+    /**
+     * @Route("/envoieMailRoute", name="envoieMailRoute")
+    */
 
-
+    
+    public function envoieMailRoute(memorial $memorial, \Swift_Mailer $mailer)
+    {
+        $message =(new \Swift_Message('Bonjour' .$memorial->getMemorialAller->getDepart()  
+                                                          ->getMemorailAller->getDestination()))
+        ->setFrom('bahamadoubailo67@gmail.com')
+        ->setTo($memorial->getEmail())
+        ->setBody( $this->renderView());
+        $mailer->send($message);
+        return $this->redirectToRoute('terminusAllerSimple',[
+        'memorial'=>$memorial ]);
+    }  
+    
 
  //FIN TEST NEW ROUTE 
 
@@ -247,7 +254,6 @@ class HomeController extends AbstractController
                     $memorial_aller->setDateDeDepart($dateDepart);
                     $memorial_aller->setHeureDeDepart($heureDeDepart);
                     
-
                         $em->persist($memorial_aller);        
                         $em->flush();   
        

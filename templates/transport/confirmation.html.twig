@@ -89,13 +89,14 @@
 
         </div>
             <center>
-
-                <a href="terminusAllerSimple?name=confir" class="btn btn-yellow">confirmer réservation</a>
-                <a href="memorialPageAcceuil?name=retour" class="btn btn-yellow">Réfaire votre réservation</a>
-                    <!-- 
-                <a href="terminusAllerSimple" class="btn btn-yellow"  type="submit">Confirmer la réservation</a>                              
-                <a href="memorialPageAcceuil" class="btn btn-yellow"  type="submit">Réfaire votre réservation</a>
-                -->
+                     <!-- 
+                <a href="terminusAllerSimple " class="btn btn-yellow">confirmer réservation</a>
+                <a href="memorialPageAcceuil" class="btn btn-yellow">Réfaire votre réservation</a>
+                     -->
+            
+            <a href="{{path('envoieMailRoute',{depart:memorial.depart,destination:memorial.destination}) }}" class="btn btn-yellow">Confirmer la réservation</a>                              
+            <a href="memorialPageAcceuil" class="btn btn-yellow"  type="submit">Réfaire votre réservation</a>
+              
             </center>
             
           
