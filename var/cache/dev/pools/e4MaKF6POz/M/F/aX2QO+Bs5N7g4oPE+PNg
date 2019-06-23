@@ -8,7 +8,7 @@
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/envoieMailRoute/{email}/{depart}/{destination}',
+                    '/envoieMailRoute/{nbrePassager}/{email}/{depart}/{destination}/{heureDepart}/{dateDepart}',
                 ],
                 'name' => [
                     'envoieMailRoute',

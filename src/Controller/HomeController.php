@@ -209,15 +209,23 @@ class HomeController extends AbstractController
     // GESTION EMAIL CONTROLLER  
 
     /**
-     * @Route("/envoieMailRoute/{email}/{depart}/{destination}", name="envoieMailRoute")
+     * @Route("/envoieMailRoute/{nbrePassager}/{email}/{depart}/{destination}/{heureDepart}/{dateDepart}", name="envoieMailRoute")
      */
-    public function envoieMailRoute( $email, $depart, $destination, \Swift_Mailer $mailer)
+    public function envoieMailRoute($nbrePassager, $email, $depart, $destination, $heureDepart, $dateDepart, \Swift_Mailer $mailer)
     {
-        $msgUser = "Votre reservation a bien été enregistrée\nDepart: " . $depart . 
-        "\nDestination" . $destination . "\nMerci pour votre réservation";
+        $prix = $nbrePassager <= 4 ? "80€" : "120€";
+
+       $msgUser = "Votre reservation a bien été enregistrée\nDepart: " .$depart. 
+       "\nDestination: " .$destination. 
+       "\nNombre de passagers:" .$nbrePassager.
+       "\nHeure de départ:" .$heureDepart.
+       "\nDate de départ:" .$dateDepart.
+       "\nPrix de votre reservation: " .$prix. 
+       "\nMerci pour votre réservation";
+
         $message =(new \Swift_Message('Votre reservation pour ' .$destination))
         ->setFrom('bahamadoubailo67@gmail.com')
-        ->setTo($email)
+        ->setTo($email)   
         ->setBody($msgUser);
         $mailer->send($message);
         return $this->redirectToRoute('terminusAllerSimple');

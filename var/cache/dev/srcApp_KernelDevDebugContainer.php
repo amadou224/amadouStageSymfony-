@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerPnMPVhw\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'PnMPVhw',
-    'container.build_id' => 'c4c60d18',
-    'container.build_time' => 1561294843,
+    'container.build_id' => '5c6babbf',
+    'container.build_time' => 1561300855,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerPnMPVhw');
