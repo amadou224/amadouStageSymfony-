@@ -93,7 +93,13 @@
                 {% endif %}
           </div>
             <center>
-                <a href="terminusAllerSimple" class="btn btn-yellow"  type="submit">Confirmer la réservation</a>                              
+<a href="{{ path('envoieMailAllerRetourRoute', {'nbrePassagerAller': memorial.nombrePassagerAller,'nbrePassagerRetour':memorial.nombrePassagerRetour ,
+                                        'email' : memorial.email, 'depart' : memorial.depart, 
+                                         'destination': memorial.destination, 'telephone': memorial.telephone, 
+                                         'heureDepart': memorial.horaireDeDepart, 'heureRetour':memorial.horaireRetour,
+                                         'dateDepart': memorial.dateDepart | date('d-m-Y'), 'dateRetour':memorial.dateRetour | date('d-m-Y')
+                                            })}}" class="btn btn-yellow">Confirmer la réservation</a>
+                <!-- <a href="terminusAllerSimple" class="btn btn-yellow"  type="submit">Confirmer la réservation</a> -->                             
                 <a href="memorialPageAcceuil" class="btn btn-yellow"  type="submit">Réfaire votre réservation</a>
             </center>    
 

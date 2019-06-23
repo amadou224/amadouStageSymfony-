@@ -228,7 +228,16 @@ class __TwigTemplate_4eba1266029a84365ad3b8e771be5931bebdc0155c08595c19c4b7f8f3e
         // line 94
         echo "          </div>
             <center>
-                <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
+<a href=\"";
+        // line 96
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieMailAllerRetourRoute", ["nbrePassagerAller" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 96, $this->source); })()), "nombrePassagerAller", []), "nbrePassagerRetour" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 96, $this->source); })()), "nombrePassagerRetour", []), "email" => twig_get_attribute($this->env, $this->source,         // line 97
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "email", []), "depart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "depart", []), "destination" => twig_get_attribute($this->env, $this->source,         // line 98
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 98, $this->source); })()), "destination", []), "telephone" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 98, $this->source); })()), "telephone", []), "heureDepart" => twig_get_attribute($this->env, $this->source,         // line 99
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 99, $this->source); })()), "horaireDeDepart", []), "heureRetour" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 99, $this->source); })()), "horaireRetour", []), "dateDepart" => twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source,         // line 100
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 100, $this->source); })()), "dateDepart", []), "d-m-Y"), "dateRetour" => twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 100, $this->source); })()), "dateRetour", []), "d-m-Y")]), "html", null, true);
+        // line 101
+        echo "\" class=\"btn btn-yellow\">Confirmer la réservation</a>
+                <!-- <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a> -->                             
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
             </center>    
 
@@ -264,7 +273,7 @@ class __TwigTemplate_4eba1266029a84365ad3b8e771be5931bebdc0155c08595c19c4b7f8f3e
 
     }
 
-    // line 125
+    // line 131
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -273,7 +282,7 @@ class __TwigTemplate_4eba1266029a84365ad3b8e771be5931bebdc0155c08595c19c4b7f8f3e
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 126
+        // line 132
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -298,7 +307,7 @@ class __TwigTemplate_4eba1266029a84365ad3b8e771be5931bebdc0155c08595c19c4b7f8f3e
 
     public function getDebugInfo()
     {
-        return array (  277 => 126,  268 => 125,  229 => 94,  224 => 91,  220 => 90,  218 => 89,  213 => 87,  209 => 86,  205 => 85,  201 => 84,  197 => 83,  193 => 82,  189 => 81,  185 => 80,  181 => 79,  177 => 78,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  286 => 132,  277 => 131,  239 => 101,  237 => 100,  236 => 99,  235 => 98,  234 => 97,  233 => 96,  229 => 94,  224 => 91,  220 => 90,  218 => 89,  213 => 87,  209 => 86,  205 => 85,  201 => 84,  197 => 83,  193 => 82,  189 => 81,  185 => 80,  181 => 79,  177 => 78,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -398,7 +407,13 @@ class __TwigTemplate_4eba1266029a84365ad3b8e771be5931bebdc0155c08595c19c4b7f8f3e
                 {% endif %}
           </div>
             <center>
-                <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a>                              
+<a href=\"{{ path('envoieMailAllerRetourRoute', {'nbrePassagerAller': memorial.nombrePassagerAller,'nbrePassagerRetour':memorial.nombrePassagerRetour ,
+                                        'email' : memorial.email, 'depart' : memorial.depart, 
+                                         'destination': memorial.destination, 'telephone': memorial.telephone, 
+                                         'heureDepart': memorial.horaireDeDepart, 'heureRetour':memorial.horaireRetour,
+                                         'dateDepart': memorial.dateDepart | date('d-m-Y'), 'dateRetour':memorial.dateRetour | date('d-m-Y')
+                                            })}}\" class=\"btn btn-yellow\">Confirmer la réservation</a>
+                <!-- <a href=\"terminusAllerSimple\" class=\"btn btn-yellow\"  type=\"submit\">Confirmer la réservation</a> -->                             
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
             </center>    
 

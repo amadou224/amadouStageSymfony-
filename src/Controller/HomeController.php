@@ -206,7 +206,7 @@ class HomeController extends AbstractController
         ]);
     }  
 
-    // GESTION EMAIL CONTROLLER  
+    // GESTION EMAIL CONTROLLER   ENVOIE MAIL ALLER SIMPLE MEMORIAL 
 
     /**
      * @Route("/envoieMailRoute/{nbrePassager}/{email}/{depart}/{destination}/{heureDepart}/{dateDepart}", name="envoieMailRoute")
@@ -230,10 +230,31 @@ class HomeController extends AbstractController
         $mailer->send($message);
         return $this->redirectToRoute('terminusAllerSimple');
     }  
-
-
- //FIN TEST NEW ROUTE 
-
+  //  ROUTE ENVOIE MAIL POUR UNE RESERVATION ALLER RETOUR  MEMORIAL 
+    /**
+     * @Route("/envoieMailAllerRetourRoute/{nbrePassagerAller}/{nbrePassagerRetour}/{email}/{depart}/{destination}/{telephone}/{heureDepart}/{heureRetour}/{dateDepart}/{dateRetour}", name="envoieMailAllerRetourRoute")
+     */
+    public function envoieMailAllerRetourRoute ($nbrePassagerAller, $nbrePassagerRetour, $email, $depart, $destination, $telephone, $heureDepart, $heureRetour, $dateDepart, $dateRetour, \Swift_Mailer $mailer)
+    {   
+        $prix=$nbrePassagerAller <=4 ? "160€" :"300€";
+        $msgUser="Votre réservation à bien éte enregistrée\nDepart:" .$depart.
+        "\nDestination:" .$destination.
+        "\nNombre de passager aller:" .$nbrePassagerAller.
+        "\nNombre de passager rétour:" .$nbrePassagerRetour.
+        "\nDate de départ:" .$dateDepart.
+        "\nHeure de départ:" .$heureDepart.
+        "\nDate de rétour:" .$dateRetour.
+        "\nHeure de rétour:" .$heureRetour.
+        "\nPrix de votre réservation:" .$prix.
+        "\nMerci pour votre réservation à trés bientot!";
+        $message=(new \Swift_Message('Votre réservation pour' .$destination))
+        ->setFrom('bahamadoubailo67@gmail.com')
+        ->setTo($email)
+        ->setBody($msgUser);
+        $mailer->send($message); 
+        return $this->redirectToRoute('terminusAllerSimple');
+    }
+ 
 
  // Envoie en BDD reservation transport Memorial            
     
