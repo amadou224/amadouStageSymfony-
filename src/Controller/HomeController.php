@@ -209,32 +209,31 @@ class HomeController extends AbstractController
     // GESTION EMAIL CONTROLLER  
 
     /**
-     * @Route("/envoieMailRoute", name="envoieMailRoute")
-    */
-
-    
-    public function envoieMailRoute(memorial $memorial, \Swift_Mailer $mailer)
+     * @Route("/envoieMailRoute/{email}/{depart}/{destination}", name="envoieMailRoute")
+     */
+    public function envoieMailRoute( $email, $depart, $destination, \Swift_Mailer $mailer)
     {
-        $message =(new \Swift_Message('Bonjour' .$memorial->getMemorialAller->getDepart()  
-                                                          ->getMemorailAller->getDestination()))
+        $msgUser = "Votre reservation a bien été enregistrée\nDepart: " . $depart . 
+        "\nDestination" . $destination . "\nMerci pour votre réservation";
+        $message =(new \Swift_Message('Votre reservation pour ' .$destination))
         ->setFrom('bahamadoubailo67@gmail.com')
-        ->setTo($memorial->getEmail())
-        ->setBody( $this->renderView());
+        ->setTo($email)
+        ->setBody($msgUser);
         $mailer->send($message);
-        return $this->redirectToRoute('terminusAllerSimple',[
-        'memorial'=>$memorial ]);
+        return $this->redirectToRoute('terminusAllerSimple');
     }  
-    
+
 
  //FIN TEST NEW ROUTE 
 
 
  // Envoie en BDD reservation transport Memorial            
     
-     /**
+    /**
      * @Route("/envoieBddMemorialAller", name="envoieBddMemorialAller")
      */
-     public function envoieBddMemorialAller(Request $req){                    
+     public function envoieBddMemorialAller(Request $req)
+    {                    
       $em = $this->getDoctrine()->getManager();
             $memorial_aller =new MemorialAller();
                    

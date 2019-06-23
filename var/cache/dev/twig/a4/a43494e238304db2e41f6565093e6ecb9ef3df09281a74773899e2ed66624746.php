@@ -219,11 +219,11 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
                 <a href=\"terminusAllerSimple \" class=\"btn btn-yellow\">confirmer réservation</a>
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
                      -->
+            
             <a href=\"";
-        // line 96
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
-        echo "\" class=\"btn btn-yellow\">Confirmer la réservation</a>   
-                          
+        // line 97
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieMailRoute", ["email" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "email", []), "depart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "depart", []), "destination" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "destination", [])]), "html", null, true);
+        echo "\" class=\"btn btn-yellow\">Confirmer la réservation</a>                              
             <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
               
             </center>
@@ -295,7 +295,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
     public function getDebugInfo()
     {
-        return array (  274 => 129,  265 => 128,  224 => 96,  215 => 89,  210 => 86,  206 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  188 => 80,  184 => 79,  180 => 78,  176 => 77,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  274 => 129,  265 => 128,  225 => 97,  215 => 89,  210 => 86,  206 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  188 => 80,  184 => 79,  180 => 78,  176 => 77,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -395,8 +395,8 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
                 <a href=\"terminusAllerSimple \" class=\"btn btn-yellow\">confirmer réservation</a>
                 <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
                      -->
-            <a href=\"{{path('index') }}\" class=\"btn btn-yellow\">Confirmer la réservation</a>   
-                          
+            
+            <a href=\"{{path('envoieMailRoute', {'email': memorial.email, 'depart': memorial.depart, 'destination': memorial.destination})}}\" class=\"btn btn-yellow\">Confirmer la réservation</a>                              
             <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\"  type=\"submit\">Réfaire votre réservation</a>
               
             </center>

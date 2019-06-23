@@ -94,7 +94,7 @@
                 <a href="memorialPageAcceuil" class="btn btn-yellow">Réfaire votre réservation</a>
                      -->
             
-            <a href="{{path('envoieMailRoute',{depart:memorial.depart,destination:memorial.destination}) }}" class="btn btn-yellow">Confirmer la réservation</a>                              
+            <a href="{{path('envoieMailRoute', {'email': memorial.email, 'depart': memorial.depart, 'destination': memorial.destination})}}" class="btn btn-yellow">Confirmer la réservation</a>                              
             <a href="memorialPageAcceuil" class="btn btn-yellow"  type="submit">Réfaire votre réservation</a>
               
             </center>

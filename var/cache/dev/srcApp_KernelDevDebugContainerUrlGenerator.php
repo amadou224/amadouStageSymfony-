@@ -56,7 +56,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'confirmation' => [[], ['_controller' => 'App\\Controller\\HomeController::confirmationRoute'], [], [['text', '/confirmation']], [], []],
         'confirmationAllerRetour' => [[], ['_controller' => 'App\\Controller\\HomeController::confirmationAllerRetourRoute'], [], [['text', '/confirmationAllerRetour']], [], []],
         'terminusAllerSimple' => [[], ['_controller' => 'App\\Controller\\HomeController::terminusReservationRoute'], [], [['text', '/terminusAllerSimple']], [], []],
-        'index' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/index']], [], []],
+        'envoieMailRoute' => [['email', 'depart', 'destination'], ['_controller' => 'App\\Controller\\HomeController::envoieMailRoute'], [], [['variable', '/', '[^/]++', 'destination', true], ['variable', '/', '[^/]++', 'depart', true], ['variable', '/', '[^/]++', 'email', true], ['text', '/envoieMailRoute']], [], []],
         'envoieBddMemorialAller' => [[], ['_controller' => 'App\\Controller\\HomeController::envoieBddMemorialAller'], [], [['text', '/envoieBddMemorialAller']], [], []],
         'envoieBddMemorialAllerRetour' => [[], ['_controller' => 'App\\Controller\\HomeController::envoieBddMemorialAllerRetour'], [], [['text', '/envoieBddMemorialAllerRetour']], [], []],
         'horairesTarifs' => [[], ['_controller' => 'App\\Controller\\HomeController::aeroportRouteHorairesTarifs'], [], [['text', '/horairesTarifs']], [], []],
