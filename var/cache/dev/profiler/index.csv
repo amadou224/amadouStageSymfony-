@@ -3368,3 +3368,13 @@ fc5368,127.0.0.1,GET,http://127.0.0.1:8001/envoieMailAllerRetourRoute/8/5/bailof
 8555dd,127.0.0.1,GET,http://127.0.0.1:8001/envoieMailAllerRetourRoute/8/5/bailofr@hotmail.fr/Gare%20Centrale/M%C3%A9morial%20Struthof/0388456322/08h30/14h30/30-06-2019/30-06-2019,1561307458,,302
 8cbc55,127.0.0.1,GET,http://127.0.0.1:8001/terminusAllerSimple,1561307461,,200
 d72f24,127.0.0.1,GET,http://127.0.0.1:8001/,1561364730,,200
+9b5f2f,127.0.0.1,GET,http://127.0.0.1:8000/,1561445207,,200
+f07e6a,127.0.0.1,GET,http://127.0.0.1:8000/memorialPageAcceuil,1561445214,,200
+51f818,127.0.0.1,POST,http://127.0.0.1:8000/envoieBddMemorialAller,1561445231,,302
+eb3102,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=103,1561445232,,200
+425270,127.0.0.1,GET,http://127.0.0.1:8000/envoieMailRoute/2/bailofr@hotmail.fr/Palais%20des%20Droits%20de%20l%27homme/M%C3%A9morial%20Struthof/10h30/22-06-2019,1561445235,,302
+54ac53,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561445238,,200
+b60ac2,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561445270,,200
+5ba046,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561445433,,200
+00c725,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561445492,,200
+8e1fe7,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561445508,,200

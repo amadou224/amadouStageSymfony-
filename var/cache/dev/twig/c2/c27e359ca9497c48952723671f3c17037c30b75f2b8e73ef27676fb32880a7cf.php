@@ -152,9 +152,10 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
  </br>
 
            <center>
-             <h2><strong>Votre reservation est bien enregisteé </strong></h2></br>
-             
-            <p>effectuez le payment</p>
+             <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
+                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation</h6><br>
+          <!--   <p>effectuez le payment</p>    --> 
+            <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
             </div>
             </center>
 
@@ -193,7 +194,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     }
 
-    // line 92
+    // line 93
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -202,7 +203,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 93
+        // line 94
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -227,7 +228,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     public function getDebugInfo()
     {
-        return array (  206 => 93,  197 => 92,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  207 => 94,  198 => 93,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -289,9 +290,10 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
  </br>
 
            <center>
-             <h2><strong>Votre reservation est bien enregisteé </strong></h2></br>
-             
-            <p>effectuez le payment</p>
+             <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
+                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation</h6><br>
+          <!--   <p>effectuez le payment</p>    --> 
+            <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
             </div>
             </center>
 
@@ -327,6 +329,6 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
 <script src=\"javascript/reservationAeroport.js\"></script>
 
-{% endblock %}", "transport/terminusAllerSimple.html.twig", "C:\\FZ Symfony\\Symfony\\templates\\transport\\terminusAllerSimple.html.twig");
+{% endblock %}  ", "transport/terminusAllerSimple.html.twig", "C:\\FZ Symfony\\Symfony\\templates\\transport\\terminusAllerSimple.html.twig");
     }
 }
