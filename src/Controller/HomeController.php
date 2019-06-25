@@ -44,10 +44,9 @@ class HomeController extends AbstractController
         ]);
     }
 
-
     ///////////////////////////////  AMADOU TRANSPORT MEMORIAL CONTROLLER  ///////////////////////////////////////
 
-          // Route transport // 
+                                               // Route transport // 
 
     /**
      * @Route("/transport",name="transport")
@@ -57,7 +56,6 @@ class HomeController extends AbstractController
         return $this -> render('transport/transport.html.twig',[
             'controller_name'=>'HomeController',
             ]);
-
     }
 
     //  Route pour voir le contact  du client  
@@ -115,8 +113,6 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',]);
     }
 
-
-
     /**
      * @Route("/tarifDuSite", name= "tarifDuSite")
      */
@@ -126,8 +122,6 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',]);
     }
 
-
-
     /**
      * @Route("/galerieDuSite", name= "galerieDuSite")
      */
@@ -136,7 +130,6 @@ class HomeController extends AbstractController
         return $this -> render('transport/galerieDuSite.html.twig',[
             'controller_name' => 'HomeController',]);
     }
-
 
     /**
      * @Route("/horaireDuSite",name="horaireDuSite")
@@ -150,15 +143,12 @@ class HomeController extends AbstractController
 
     //     TEST NEW ROUTE  
 
-
     /**
      * @Route("/memorialPageAcceuil", name="memorialPageAcceuil")
      */
     public function memorialPageAcceuilRoute()
-    {
-        
-        return $this->render('transport/memorialPageAcceuil.html.twig', [
-        
+    {        
+        return $this->render('transport/memorialPageAcceuil.html.twig', [    
         ]);
     }
 
@@ -171,10 +161,9 @@ class HomeController extends AbstractController
     {      
         $repo = $this->getDoctrine()->getRepository(MemorialAller::class);      
         $memorial = $repo->find($request->get('id'));          
-     
+
         return   $this->render('transport/confirmation.html.twig', [           
-            'memorial'=>$memorial
-            
+              'memorial'=>$memorial            
         ]);
     }
     
@@ -193,7 +182,7 @@ class HomeController extends AbstractController
         ]);
     }
     
-  // FIN CONFIRMATION RESERVATION  ALLER RETOUR      
+                   // FIN CONFIRMATION RESERVATION  ALLER RETOUR      
 
     // Terminus reservation Memorial aller simple 
 
@@ -213,8 +202,7 @@ class HomeController extends AbstractController
      */
     public function envoieMailRoute($nbrePassager, $email, $depart, $destination, $heureDepart, $dateDepart, \Swift_Mailer $mailer)
     {
-        $prix = $nbrePassager <= 4 ? "80€" : "120€";
-
+        $prix = $nbrePassager <= 4 ? "80€" : "120€";   // condition ternaire  use ...here ;)
        $msgUser = "Votre reservation a bien été enregistrée\nDepart: " .$depart. 
        "\nDestination: " .$destination. 
        "\nNombre de passagers:" .$nbrePassager.
@@ -222,7 +210,6 @@ class HomeController extends AbstractController
        "\nDate de départ:" .$dateDepart.
        "\nPrix de votre reservation: " .$prix. 
        "\nMerci pour votre réservation";
-
         $message =(new \Swift_Message('Votre reservation pour ' .$destination))
         ->setFrom('bahamadoubailo67@gmail.com')
         ->setTo($email)   
@@ -255,7 +242,6 @@ class HomeController extends AbstractController
         return $this->redirectToRoute('terminusAllerSimple');
     }
  
-
  // Envoie en BDD reservation transport Memorial            
     
     /**
