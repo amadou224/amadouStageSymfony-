@@ -160,9 +160,7 @@ class AnnexesController extends AbstractController
          
   
           return $this->redirectToRoute('reservationAllerRetourRoyalPalace',['id'=>$royal_aller_retour->getId()]);
-      } 
+    } 
       
-
-
 
 }

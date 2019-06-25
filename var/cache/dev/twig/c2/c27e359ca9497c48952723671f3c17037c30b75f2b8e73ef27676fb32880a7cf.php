@@ -160,8 +160,6 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
             </center>
 
 
-
-
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
@@ -194,7 +192,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     }
 
-    // line 93
+    // line 91
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -203,7 +201,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 94
+        // line 92
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -228,7 +226,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     public function getDebugInfo()
     {
-        return array (  207 => 94,  198 => 93,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  205 => 92,  196 => 91,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -296,8 +294,6 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
             <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
             </div>
             </center>
-
-
 
 
     <script>

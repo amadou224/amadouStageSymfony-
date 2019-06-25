@@ -242,7 +242,7 @@ class HomeController extends AbstractController
         return $this->redirectToRoute('terminusAllerSimple');
     }
  
- // Envoie en BDD reservation transport Memorial            
+    // Envoie en BDD reservation transport Memorial            
     
     /**
      * @Route("/envoieBddMemorialAller", name="envoieBddMemorialAller")
@@ -314,7 +314,7 @@ class HomeController extends AbstractController
     }
                         
 
-            ////    AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
+            //                 AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
 
 
     /**

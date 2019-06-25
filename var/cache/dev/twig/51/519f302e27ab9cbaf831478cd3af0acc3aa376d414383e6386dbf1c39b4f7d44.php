@@ -68,7 +68,7 @@ class __TwigTemplate_af8cbcdff72592d9a2469b19569fb21e1b7b341ec1f8cd5556e5b482a80
                 <path
                     d=\"M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94\" />
                 </svg>
-            </td>
+            </td><!--test commit -->
 \t\t\t<td><a href=\"memorialPageAcceuil\"><span style=\"color:#780E47\"><strong>ACCEUIL &nbsp</strong></span></a></td>
 \t\t\t<td><a href=\"informations\"><span style=\"color:#780E47\"><strong>INFORMATIONS &nbsp</strong></span></a></td>
 \t\t\t<td><a href=\"tarif\"><span style=\"color:#780E47\"><strong>TARIF &nbsp</strong></span></a></td>
@@ -235,7 +235,7 @@ class __TwigTemplate_af8cbcdff72592d9a2469b19569fb21e1b7b341ec1f8cd5556e5b482a80
                 <path
                     d=\"M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94\" />
                 </svg>
-            </td>
+            </td><!--test commit -->
 \t\t\t<td><a href=\"memorialPageAcceuil\"><span style=\"color:#780E47\"><strong>ACCEUIL &nbsp</strong></span></a></td>
 \t\t\t<td><a href=\"informations\"><span style=\"color:#780E47\"><strong>INFORMATIONS &nbsp</strong></span></a></td>
 \t\t\t<td><a href=\"tarif\"><span style=\"color:#780E47\"><strong>TARIF &nbsp</strong></span></a></td>
