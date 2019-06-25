@@ -1,7 +1,7 @@
 swiftmailer:
     transport: gmail
     username: bahamadoubailo67@gmail.com
-    password: Marseille67
+    password: motDePasse
     host: localhost
     port: 465
     encryption: ssl
