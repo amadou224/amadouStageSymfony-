@@ -3407,3 +3407,9 @@ f5212d,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=105,1561461937,,200
 debcd4,127.0.0.1,GET,http://127.0.0.1:8000/envoieMailRoute/8/bailofr@hotmail.fr/Gare%20Centrale/M%C3%A9morial%20Struthof/09h30/30-06-2019,1561461958,,302
 65d3ca,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561461960,,200
 ad2203,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=105,1561462046,,200
+981141,127.0.0.1,GET,http://127.0.0.1:8000/,1561486371,,200
+42c184,127.0.0.1,GET,http://127.0.0.1:8000/memorialPageAcceuil,1561486379,,200
+6db12e,127.0.0.1,POST,http://127.0.0.1:8000/envoieBddMemorialAller,1561486413,,302
+e66dc8,127.0.0.1,GET,http://127.0.0.1:8000/confirmation?id=106,1561486414,,200
+f49b4b,127.0.0.1,GET,http://127.0.0.1:8000/envoieMailRoute/4/bailofr@hotmail.fr/Gare%20Centrale/M%C3%A9morial%20Struthof/08h30/16-06-2019,1561486420,,302
+166689,127.0.0.1,GET,http://127.0.0.1:8000/terminusAllerSimple,1561486424,,200

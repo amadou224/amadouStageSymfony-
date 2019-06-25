@@ -118,11 +118,9 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
     <div class=\"content\">
             <img src=\"https://www.onac-vg.fr/sites/default/files/styles/home/public/2018-08/Centre%20europ%C3%A9en%20du%20r%C3%A9sistant%20d%C3%A9port%C3%A9%20-%20site%20du%20Struthof0002.jpg?itok=XS9zxJ7b\" alt =\"\" width=\"1920\" height=\"70\" >
            
-    </div>
-
-        
+    </div>       
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-    <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->
+    
                 
                     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor09\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
@@ -150,101 +148,81 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
     </div>
     </nav> </br>
  
-<!-- 
-<h5 style=\"text-align:center\"><strong> <em> Avant d'effectuer votre réservervation, merci de bien vouloir prendre connaissance des informations concernant: </em></strong></h5>
-    <div style=\"align:center\">
-            <ul>
-                <li >
-                    <a href=\"visiteDuSite\"><strong>La visite du Site</strong> </a>
-                </li>                
-                <li>
-                <a href=\"horaireDuSite\"><strong> Les horaires</strong> </a>
-                </li>
-                <li>
-                    <a href=\"tarifDuSite\">  <strong>Les tarifs<strong></a>
-                </li>
-            </ul>
-    </div>
-  
-    <hr style=\"border:solid black 1px;width:75%;\" />   -->
     <h5 style=\"text-align:center;text-decoration:underline\"><strong> <em>Les informations suivantes sont elles exactes ? </em></strong></h5></br>     
         
         <div style=\"text-align:center\">
 
                 <h5><strong>Lieu de départ:</strong>&nbsp";
-        // line 77
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 77, $this->source); })()), "depart", []), "html", null, true);
+        // line 58
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 58, $this->source); })()), "depart", []), "html", null, true);
         echo "</h5>  </br>
                 <h5><strong>Destination:</strong>&nbsp";
-        // line 78
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 78, $this->source); })()), "destination", []), "html", null, true);
+        // line 59
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 59, $this->source); })()), "destination", []), "html", null, true);
         echo "</h5>  </br>
                 <h5><strong>Nombre de passagers:</strong>&nbsp";
-        // line 79
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 79, $this->source); })()), "nombrePassager", []), "html", null, true);
+        // line 60
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 60, $this->source); })()), "nombrePassager", []), "html", null, true);
         echo " </h5>  </br>
                 <h5><strong>E-mail:</strong>&nbsp";
-        // line 80
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 80, $this->source); })()), "email", []), "html", null, true);
+        // line 61
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 61, $this->source); })()), "email", []), "html", null, true);
         echo "</h5>  </br>
                 <h5><strong>Téléphone:</strong>&nbsp";
-        // line 81
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 81, $this->source); })()), "telephone", []), "html", null, true);
+        // line 62
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 62, $this->source); })()), "telephone", []), "html", null, true);
         echo "</h5>  </br>
                 <h5><strong>Date de départ:</strong>&nbsp";
-        // line 82
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 82, $this->source); })()), "dateDeDepart", []), "d/m/Y"), "html", null, true);
+        // line 63
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 63, $this->source); })()), "dateDeDepart", []), "d/m/Y"), "html", null, true);
         echo "</h5>  </br>
                 <h5><strong>Heure de départ:</strong>&nbsp";
-        // line 83
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 83, $this->source); })()), "heureDeDepart", []), "html", null, true);
+        // line 64
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 64, $this->source); })()), "heureDeDepart", []), "html", null, true);
         echo "</h5>  </br>
                 ";
-        // line 84
-        if ((twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 84, $this->source); })()), "nombrePassager", []) <= 4)) {
-            // line 85
+        // line 65
+        if ((twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 65, $this->source); })()), "nombrePassager", []) <= 4)) {
+            // line 66
             echo "                <h5><strong>Prix:</strong>&nbsp 80€</h5></br>
                 ";
         } else {
-            // line 86
+            // line 67
             echo " 
                 <h5><strong>Prix:</strong>&nbsp 120€</h5></br>
                 ";
         }
-        // line 89
+        // line 70
         echo "
         </div>
-            <center>
-                     <!-- 
-                <a href=\"terminusAllerSimple \" class=\"btn btn-yellow\">confirmer réservation</a>
-                <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
-                     -->
-            
-            <a href=\"";
-        // line 97
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieMailRoute", ["nbrePassager" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 97, $this->source); })()), "nombrePassager", []), "email" => twig_get_attribute($this->env, $this->source,         // line 98
-(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 98, $this->source); })()), "email", []), "depart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 98, $this->source); })()), "depart", []), "destination" => twig_get_attribute($this->env, $this->source,         // line 99
-(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 99, $this->source); })()), "destination", []), "heureDepart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 99, $this->source); })()), "heureDeDepart", []), "dateDepart" => twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source,         // line 100
-(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 100, $this->source); })()), "dateDeDepart", []), "d-m-Y")]), "html", null, true);
+            <center>                           
+                <a href=\"";
+        // line 73
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieMailRoute", ["nbrePassager" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 73, $this->source); })()), "nombrePassager", []), "email" => twig_get_attribute($this->env, $this->source,         // line 74
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 74, $this->source); })()), "email", []), "depart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 74, $this->source); })()), "depart", []), "destination" => twig_get_attribute($this->env, $this->source,         // line 75
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 75, $this->source); })()), "destination", []), "heureDepart" => twig_get_attribute($this->env, $this->source, (isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 75, $this->source); })()), "heureDeDepart", []), "dateDepart" => twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source,         // line 76
+(isset($context["memorial"]) || array_key_exists("memorial", $context) ? $context["memorial"] : (function () { throw new RuntimeError('Variable "memorial" does not exist.', 76, $this->source); })()), "dateDeDepart", []), "d-m-Y")]), "html", null, true);
         echo "\" 
-                                                 class=\"btn btn-green\">Confirmer</a> 
-
-            <a href=\"memorialPageAcceuil\" class=\"btn btn-red\"  type=\"submit\">Modifier</a>
-              
-            </center>
-            
+                                                    class=\"btn btn-green\">Confirmer</a> 
+                <a href=\"memorialPageAcceuil\" class=\"btn btn-red\"  type=\"submit\">Modifier</a>                
+            </center>            
           
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
+        (function ()
+        {
             'use strict';
-            window.addEventListener('load', function () {
+            window.addEventListener('load', function () 
+            {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
+                var validation = Array.prototype.filter.call(forms, function (form) 
+                {
+                    form.addEventListener('submit', function (event)
+                    {
+                        if (form.checkValidity() === false) 
+                        {
                             event.preventDefault();
                             event.stopPropagation();
                         }
@@ -266,7 +244,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
     }
 
-    // line 133
+    // line 111
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -275,7 +253,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 134
+        // line 112
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -300,7 +278,7 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
 
     public function getDebugInfo()
     {
-        return array (  279 => 134,  270 => 133,  228 => 100,  227 => 99,  226 => 98,  225 => 97,  215 => 89,  210 => 86,  206 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  188 => 80,  184 => 79,  180 => 78,  176 => 77,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  257 => 112,  248 => 111,  204 => 76,  203 => 75,  202 => 74,  201 => 73,  196 => 70,  191 => 67,  187 => 66,  185 => 65,  181 => 64,  177 => 63,  173 => 62,  169 => 61,  165 => 60,  161 => 59,  157 => 58,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -328,11 +306,9 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
     <div class=\"content\">
             <img src=\"https://www.onac-vg.fr/sites/default/files/styles/home/public/2018-08/Centre%20europ%C3%A9en%20du%20r%C3%A9sistant%20d%C3%A9port%C3%A9%20-%20site%20du%20Struthof0002.jpg?itok=XS9zxJ7b\" alt =\"\" width=\"1920\" height=\"70\" >
            
-    </div>
-
-        
+    </div>       
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-    <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->
+    
                 
                     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor09\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
@@ -360,23 +336,6 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
     </div>
     </nav> </br>
  
-<!-- 
-<h5 style=\"text-align:center\"><strong> <em> Avant d'effectuer votre réservervation, merci de bien vouloir prendre connaissance des informations concernant: </em></strong></h5>
-    <div style=\"align:center\">
-            <ul>
-                <li >
-                    <a href=\"visiteDuSite\"><strong>La visite du Site</strong> </a>
-                </li>                
-                <li>
-                <a href=\"horaireDuSite\"><strong> Les horaires</strong> </a>
-                </li>
-                <li>
-                    <a href=\"tarifDuSite\">  <strong>Les tarifs<strong></a>
-                </li>
-            </ul>
-    </div>
-  
-    <hr style=\"border:solid black 1px;width:75%;\" />   -->
     <h5 style=\"text-align:center;text-decoration:underline\"><strong> <em>Les informations suivantes sont elles exactes ? </em></strong></h5></br>     
         
         <div style=\"text-align:center\">
@@ -395,34 +354,31 @@ class __TwigTemplate_34f6282835605825fd91da2c7677a4e724013e3e5113bf62c58e83d3891
                 {% endif %}
 
         </div>
-            <center>
-                     <!-- 
-                <a href=\"terminusAllerSimple \" class=\"btn btn-yellow\">confirmer réservation</a>
-                <a href=\"memorialPageAcceuil\" class=\"btn btn-yellow\">Réfaire votre réservation</a>
-                     -->
-            
-            <a href=\"{{ path('envoieMailRoute', {'nbrePassager': memorial.nombrePassager, 
-                                                'email' : memorial.email, 'depart' : memorial.depart,
-                                                 'destination': memorial.destination, 'heureDepart': memorial.heureDeDepart, 
-                                                 'dateDepart': memorial.dateDeDepart | date('d-m-Y')})}}\" 
-                                                 class=\"btn btn-green\">Confirmer</a> 
-
-            <a href=\"memorialPageAcceuil\" class=\"btn btn-red\"  type=\"submit\">Modifier</a>
-              
-            </center>
-            
+            <center>                           
+                <a href=\"{{ path('envoieMailRoute', {'nbrePassager': memorial.nombrePassager, 
+                                                    'email' : memorial.email, 'depart' : memorial.depart,
+                                                    'destination': memorial.destination, 'heureDepart': memorial.heureDeDepart, 
+                                                    'dateDepart': memorial.dateDeDepart | date('d-m-Y')})}}\" 
+                                                    class=\"btn btn-green\">Confirmer</a> 
+                <a href=\"memorialPageAcceuil\" class=\"btn btn-red\"  type=\"submit\">Modifier</a>                
+            </center>            
           
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
+        (function ()
+        {
             'use strict';
-            window.addEventListener('load', function () {
+            window.addEventListener('load', function () 
+            {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
+                var validation = Array.prototype.filter.call(forms, function (form) 
+                {
+                    form.addEventListener('submit', function (event)
+                    {
+                        if (form.checkValidity() === false) 
+                        {
                             event.preventDefault();
                             event.stopPropagation();
                         }
