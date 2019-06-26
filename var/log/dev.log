@@ -10786,3 +10786,6 @@
 [2019-06-25 20:13:44] request.INFO: Matched route "terminusAllerSimple". {"route":"terminusAllerSimple","route_parameters":{"_route":"terminusAllerSimple","_controller":"App\\Controller\\HomeController::terminusReservationRoute"},"request_uri":"http://127.0.0.1:8000/terminusAllerSimple","method":"GET"} []
 [2019-06-25 20:13:44] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2019-06-25 20:13:45] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"166689"},"request_uri":"http://127.0.0.1:8000/_wdt/166689","method":"GET"} []
+[2019-06-26 09:04:39] request.INFO: Matched route "memorialPageAcceuil". {"route":"memorialPageAcceuil","route_parameters":{"_route":"memorialPageAcceuil","_controller":"App\\Controller\\HomeController::memorialPageAcceuilRoute"},"request_uri":"http://127.0.0.1:8000/memorialPageAcceuil","method":"GET"} []
+[2019-06-26 09:04:39] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2019-06-26 09:04:40] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"ee3bbc"},"request_uri":"http://127.0.0.1:8000/_wdt/ee3bbc","method":"GET"} []

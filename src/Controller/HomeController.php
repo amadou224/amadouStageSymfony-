@@ -314,7 +314,7 @@ class HomeController extends AbstractController
     }
                         
 
-            //                 AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
+            //             AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
 
 
     /**
@@ -343,7 +343,7 @@ class HomeController extends AbstractController
      */
     public function infoDestination()
     {
-        return $this->json(['username' => 'amine']);
+        return $this->json(['username' => 'amine']);        
     }
 
     /**
