@@ -317,20 +317,29 @@ class HomeController extends AbstractController
         /**
          * @Route("/paiementStripe",name="paiementStripe")
         */
-        public function paiementStripe()                   //                                    Request $request)
-        {                
+        public function paiementStripe()     //   Request $request)
+        {  
+                                  
             \Stripe\Stripe::setApiKey('sk_test_G7XWdB0JDSAVtvhGSbKcyzox00D8CPhvct');               
             \Stripe\Charge::create(array(
                'amount' => 5000,
                 'currency' => 'eur',
-                'source'=>('tok_mastercard'),                                               //$request->request->get('stripeToken'),
-                'description' => 'test de payment',
-               
+                'source'=>('tok_mastercard'),      //$request->request->get('stripeToken'),
+                'description' => 'test de payment',               
                 ));       
-
-                return $this ->render('transport/paiementStripe.html.twig',[
+                return $this->render('transport/paiementStripe.html.twig',[
+                  //  'memorial'=> $memorial
+                  // $prix = $nbrePassager <= 4 ? "80€" : "120€"; 
                     ]);
-        }
+        } 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////
+      //  public function paiementStripe()
+     //   {
+
+      //  }
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
         // CONFIRMATION PAYEMENT 
         /**

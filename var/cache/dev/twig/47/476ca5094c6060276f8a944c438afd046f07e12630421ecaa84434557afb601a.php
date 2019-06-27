@@ -120,7 +120,6 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
             <img src=\"https://www.onac-vg.fr/sites/default/files/styles/home/public/2018-08/Centre%20europ%C3%A9en%20du%20r%C3%A9sistant%20d%C3%A9port%C3%A9%20-%20site%20du%20Struthof0002.jpg?itok=XS9zxJ7b\" alt =\"\" width=\"1920\" height=\"70\" >
            
     </div>
-
     
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
  
@@ -168,9 +167,6 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
     </li>
 </ul>
 </div>     
-
-
-
 <center>
 <p><B>PRESENTATION VIDEO DU MEMORIAL<B></p>
 <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SYugkLPUPDQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
@@ -203,7 +199,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
    <div style=\"display: none;\" id=\"FormAllerSimple\">
             <form class=\"needs-validation\" name=\"formReservation\" method=\"post\" action=\"";
-        // line 108
+        // line 104
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddMemorialAller");
         echo "\"
                >                                                        
@@ -366,7 +362,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
         <div style=\"display: none;\" id=\"FormAllerRetour\">
             <form class=\"needs-validation\" method=\"get\" action=\"";
-        // line 268
+        // line 264
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddMemorialAllerRetour");
         echo "\" novalidate>
 
@@ -605,7 +601,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     }
 
-    // line 498
+    // line 494
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -614,7 +610,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 499
+        // line 495
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -639,7 +635,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     public function getDebugInfo()
     {
-        return array (  618 => 499,  609 => 498,  370 => 268,  207 => 108,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  614 => 495,  605 => 494,  366 => 264,  203 => 104,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -669,7 +665,6 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
             <img src=\"https://www.onac-vg.fr/sites/default/files/styles/home/public/2018-08/Centre%20europ%C3%A9en%20du%20r%C3%A9sistant%20d%C3%A9port%C3%A9%20-%20site%20du%20Struthof0002.jpg?itok=XS9zxJ7b\" alt =\"\" width=\"1920\" height=\"70\" >
            
     </div>
-
     
 <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
  
@@ -717,9 +712,6 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
     </li>
 </ul>
 </div>     
-
-
-
 <center>
 <p><B>PRESENTATION VIDEO DU MEMORIAL<B></p>
 <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SYugkLPUPDQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>

@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerXOsWYZ2\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'XOsWYZ2',
-    'container.build_id' => '4f638b3d',
-    'container.build_time' => 1561641760,
+    'container.build_id' => '87fff4ee',
+    'container.build_time' => 1561667549,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerXOsWYZ2');
