@@ -1,0 +1,150 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v3.8.5">
+
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/aeroport.css">
+{% endblock %}
+
+{% block body %}
+
+    <div >
+        <h3  style="background-color:#780E47; heigth:50px; text-align:center; color:white">MEMORIAL DE NATZWEILER-STRUTHOF</h3>
+    </div>
+
+    <div class="content">
+            <img src="https://www.onac-vg.fr/sites/default/files/styles/home/public/2018-08/Centre%20europ%C3%A9en%20du%20r%C3%A9sistant%20d%C3%A9port%C3%A9%20-%20site%20du%20Struthof0002.jpg?itok=XS9zxJ7b" alt ="" width="1920" height="70" >
+           
+    </div>
+       
+    </br>
+<div    align="center">
+	<table>
+		<tr >
+
+            <td>
+                <div class="d-flex justify-content-around">
+                <div class="">
+                <a class="nav-link" href="/"><img src="images/logo-alsace-navette.png" height="30" alt=""></a>
+                <title>Product</title>
+                <circle cx="12" cy="12" r="10" />
+                <path
+                    d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+            </td>
+            
+			<td><a href="memorialPageAcceuil"><span style="color:#780E47"><strong><B>ACCEUIL &nbsp<B></strong></span></a></td>
+			<td><a href="informations"><span style="color:#780E47"><strong><B>INFORMATIONS &nbsp</B></strong></span></a></td>
+			<td><a href="tarif"><span style="color:#780E47"><strong><B>TARIF &nbsp</B></strong></span></a></td>
+			<td><a href="contact"><span style="color:#780E47"><strong><B>CONTACT&nbsp</B></strong></span></a></td>
+            <td><a href="galerieDuSite"><span style="color:#780E47"><strong><B>GALERIE</B></strong></span></a></td>
+            
+		</tr>
+	</table>
+</div>
+ </br>
+
+    <center>
+
+        <h5 style="color:green" >Votre paiement a bien été pris en compte</h5>
+        <p>Merci pour votre visite à très bientôt !</p></br>  
+       <p>Nous vous invitons à regarder cette petite video pour nous connaitre un peu plus</p>
+
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/nCwrucGXamE" frameborder="0" allow="accelerometer;
+            autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+    </center>
+<script src="https://js.stripe.com/v3/"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+<script>
+                        var stripe = Stripe('pk_test_LiWH7BI0abhR2hwZncUIwYNZ00NLd9s01W');  
+                        var elements = stripe.elements();
+                        // Custom styling can be passed to options when creating an Element.
+                        var style = {
+                        base: {
+                            // Add your base input styles here. For example:
+                            fontSize: '16px',
+                            color: "#32325d",
+                        }
+                        };
+
+                        // Create an instance of the card Element.
+                        var card = elements.create('card', {style: style});
+
+                        // Add an instance of the card Element into the `card-element` <div>.
+                        card.mount('#card-element');
+                        card.addEventListener('change', function(event) {
+                        var displayError = document.getElementById('card-errors');
+                        if (event.error) {
+                            displayError.textContent = event.error.message;
+                        } else {
+                            displayError.textContent = '';
+                        }
+                        });
+
+                        // Create a token or display an error when the form is submitted.
+                        var form = document.getElementById('payment-form');
+                        form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+
+                        stripe.createToken(card).then(function(result) {
+                            if (result.error) {
+                            // Inform the customer that there was an error.
+                            var errorElement = document.getElementById('card-errors');
+                            errorElement.textContent = result.error.message;
+                            } else {
+                            // Send the token to your server.
+                            stripeTokenHandler(result.token);
+                            }
+                        });
+                        });
+                        function stripeTokenHandler(token) {
+                        // Insert the token ID into the form so it gets submitted to the server
+                        var form = document.getElementById('payment-form');
+                        var hiddenInput = document.createElement('input');
+                        hiddenInput.setAttribute('type', 'hidden');
+                        hiddenInput.setAttribute('name', 'stripeToken');
+                        hiddenInput.setAttribute('value', token.id);
+                        form.appendChild(hiddenInput);
+
+                        // Submit the form
+                        form.submit();
+                        }
+</script>
+<script src="javascript/reservationAeroport.js"></script>
+
+{% endblock %}  

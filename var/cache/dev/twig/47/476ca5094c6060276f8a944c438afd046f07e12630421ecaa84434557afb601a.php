@@ -167,7 +167,15 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
         <a href=\"tarifDuSite\">  <strong>Les tarifs<strong></a>
     </li>
 </ul>
-</div>
+</div>     
+
+
+
+<center>
+<p><B>PRESENTATION VIDEO DU MEMORIAL<B></p>
+<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SYugkLPUPDQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+
+</center>
   
 <hr style=\"border:solid black 1px;width:75%;\" />
     <!--        RAJOUT NAV AMADOU          -->
@@ -195,7 +203,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
    <div style=\"display: none;\" id=\"FormAllerSimple\">
             <form class=\"needs-validation\" name=\"formReservation\" method=\"post\" action=\"";
-        // line 100
+        // line 108
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddMemorialAller");
         echo "\"
                >                                                        
@@ -358,7 +366,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
         <div style=\"display: none;\" id=\"FormAllerRetour\">
             <form class=\"needs-validation\" method=\"get\" action=\"";
-        // line 260
+        // line 268
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("envoieBddMemorialAllerRetour");
         echo "\" novalidate>
 
@@ -555,7 +563,15 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
             </form>
         </div>
-    </div>                                          
+    </div>        
+
+
+
+
+
+
+
+
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -589,7 +605,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     }
 
-    // line 482
+    // line 498
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -598,7 +614,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 483
+        // line 499
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -623,7 +639,7 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
     public function getDebugInfo()
     {
-        return array (  602 => 483,  593 => 482,  362 => 260,  199 => 100,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  618 => 499,  609 => 498,  370 => 268,  207 => 108,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -700,7 +716,15 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
         <a href=\"tarifDuSite\">  <strong>Les tarifs<strong></a>
     </li>
 </ul>
-</div>
+</div>     
+
+
+
+<center>
+<p><B>PRESENTATION VIDEO DU MEMORIAL<B></p>
+<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SYugkLPUPDQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+
+</center>
   
 <hr style=\"border:solid black 1px;width:75%;\" />
     <!--        RAJOUT NAV AMADOU          -->
@@ -1082,7 +1106,15 @@ class __TwigTemplate_73013d90facd777e1912d3f63f31045d8b56e9727d8783d9a6321a9d3bb
 
             </form>
         </div>
-    </div>                                          
+    </div>        
+
+
+
+
+
+
+
+
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

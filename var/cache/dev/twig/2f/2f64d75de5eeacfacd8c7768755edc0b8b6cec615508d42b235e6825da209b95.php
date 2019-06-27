@@ -152,7 +152,7 @@ class __TwigTemplate_76967d91c3879047ccc553a5b552aa2a159cd6b9683d8284f28f6752182
                 <h5><strong>Heure de départ:</strong>&nbsp";
         // line 38
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 38, $this->source); })()), "heureDepart", []), "html", null, true);
-        echo "</h5>  </br>
+        echo "</h5> </br>
                 ";
         // line 39
         if ((twig_get_attribute($this->env, $this->source, (isset($context["royalpalace"]) || array_key_exists("royalpalace", $context) ? $context["royalpalace"] : (function () { throw new RuntimeError('Variable "royalpalace" does not exist.', 39, $this->source); })()), "nbreDePassager", []) <= 4)) {
@@ -295,7 +295,7 @@ class __TwigTemplate_76967d91c3879047ccc553a5b552aa2a159cd6b9683d8284f28f6752182
                 <h5><strong>E-mail:</strong>&nbsp{{royalpalace.email}}</h5>  </br>
                 <h5><strong>Téléphone:</strong>&nbsp{{royalpalace.telephone}}</h5>  </br>
                 <h5><strong>Date de départ:</strong>&nbsp{{ royalpalace.dateDepart | date('d/m/Y')}}</h5>  </br>
-                <h5><strong>Heure de départ:</strong>&nbsp{{royalpalace.heureDepart}}</h5>  </br>
+                <h5><strong>Heure de départ:</strong>&nbsp{{royalpalace.heureDepart}}</h5> </br>
                 {% if  royalpalace.nbreDePassager <=4  %}
                 <h5><strong>Prix:</strong>&nbsp 80€</h5></br>
                 {% else %} 

@@ -312,9 +312,39 @@ class HomeController extends AbstractController
       // return $this->render('transport/confirmationAllerRetour.html.twig');
        return $this->redirectToRoute('confirmationAllerRetour',['id'=>$memorial_aller_retour->getId()]);
     }
-                        
+      // GESTION PAYMENT MEMORIAL STRIPE  @Route("/terminusAllerSimple", name="terminusAllerSimple")
+         
+        /**
+         * @Route("/paiementStripe",name="paiementStripe")
+        */
+        public function paiementStripe(Request $request)
+        {                
+            \Stripe\Stripe::setApiKey('sk_test_G7XWdB0JDSAVtvhGSbKcyzox00D8CPhvct');               
+            \Stripe\Charge::create(array(
+               'amount' => 2000,
+                'currency' => 'eur',
+                'source'=>('tok_mastercard'),//$request->request->get('stripeToken'),
+                'description' => 'test de payment',
+               
+                ));       
 
-            //             AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
+                return $this ->render('transport/paiementStripe.html.twig',[
+                    ]);
+        }
+
+        // CONFIRMATION PAYEMENT 
+        /**
+         * @Route("/paiementOk", name="paiementOk")
+         */
+        public function paiementOk()
+        {
+            return $this->render('transport/paiementOk.html.twig',[
+
+            ]);
+        }
+    
+
+        //             AMADOU  MEMORIAL FIN  CONTROLER TRANSPORT              //
 
 
     /**

@@ -46,6 +46,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/terminusAllerSimple' => [[['_route' => 'terminusAllerSimple', '_controller' => 'App\\Controller\\HomeController::terminusReservationRoute'], null, null, null, false, false, null]],
             '/envoieBddMemorialAller' => [[['_route' => 'envoieBddMemorialAller', '_controller' => 'App\\Controller\\HomeController::envoieBddMemorialAller'], null, null, null, false, false, null]],
             '/envoieBddMemorialAllerRetour' => [[['_route' => 'envoieBddMemorialAllerRetour', '_controller' => 'App\\Controller\\HomeController::envoieBddMemorialAllerRetour'], null, null, null, false, false, null]],
+            '/paiementStripe' => [[['_route' => 'paiementStripe', '_controller' => 'App\\Controller\\HomeController::paiementStripe'], null, null, null, false, false, null]],
+            '/paiementOk' => [[['_route' => 'paiementOk', '_controller' => 'App\\Controller\\HomeController::paiementOk'], null, null, null, false, false, null]],
             '/horairesTarifs' => [[['_route' => 'horairesTarifs', '_controller' => 'App\\Controller\\HomeController::aeroportRouteHorairesTarifs'], null, null, null, false, false, null]],
             '/profile' => [[['_route' => 'profile', '_controller' => 'App\\Controller\\HomeController::Profile'], null, null, null, false, false, null]],
             '/infoDestination' => [[['_route' => 'infoDestination', '_controller' => 'App\\Controller\\HomeController::infoDestination'], null, null, null, false, false, null]],

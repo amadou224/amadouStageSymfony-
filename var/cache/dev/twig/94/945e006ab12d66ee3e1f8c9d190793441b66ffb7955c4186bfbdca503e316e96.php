@@ -196,10 +196,7 @@ class __TwigTemplate_e62cd18529666655e136984617177c0f8c352e741925216d254100091c0
                  </a>
                  </li>
         
-                   <!-- https://fr-fr.facebook.com/pages/Artecal-Informatique/127716990647161-->
-
-                   <!-- <li><a class=\"text-muted\" href=\"#\"> <i class=\"fab fa-facebook-f fa-lg\"></i> </a></li> -->
-                    <!--   <li><a class=\"text-muted\" href=\"#\"><i class=\"fab fa-instagram fa-lg\"></i></a></li> -->
+               
                 </ul>
             </div>
         </div>
@@ -395,10 +392,7 @@ class __TwigTemplate_e62cd18529666655e136984617177c0f8c352e741925216d254100091c0
                  </a>
                  </li>
         
-                   <!-- https://fr-fr.facebook.com/pages/Artecal-Informatique/127716990647161-->
-
-                   <!-- <li><a class=\"text-muted\" href=\"#\"> <i class=\"fab fa-facebook-f fa-lg\"></i> </a></li> -->
-                    <!--   <li><a class=\"text-muted\" href=\"#\"><i class=\"fab fa-instagram fa-lg\"></i></a></li> -->
+               
                 </ul>
             </div>
         </div>

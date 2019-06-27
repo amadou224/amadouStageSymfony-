@@ -153,9 +153,9 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
            <center>
              <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
-                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation</h6><br>
-          <!--   <p>effectuez le payment</p>    --> 
-            <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
+                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h6><br>
+             <!--   <p>effectuez le payment</p>    --> 
+            <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
             </div>
             </center>
 
@@ -289,9 +289,9 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
            <center>
              <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
-                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation</h6><br>
-          <!--   <p>effectuez le payment</p>    --> 
-            <a href=\"#\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
+                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h6><br>
+             <!--   <p>effectuez le payment</p>    --> 
+            <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
             </div>
             </center>
 
