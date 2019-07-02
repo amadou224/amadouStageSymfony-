@@ -122,14 +122,12 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
         
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-     <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->
-                
+     <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->               
                     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor09\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
                     </button>
 
            <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
-
                 <ul class=\"navbar-nav mr-auto\">
                     <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"memorialPageAcceuil\">Acceuil <span class=\"sr-only\">(current)</span></a>
@@ -150,15 +148,13 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
     </div>
     </nav> </br>
  </br>
-
-           <center>
-             <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
-                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h6><br>
-             <!--   <p>effectuez le payment</p>    --> 
-            <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
-            </div>
-            </center>
-
+        <center>
+         <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
+         <h4 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h4><br>
+               <h4>effectuez le payment</h4>    
+              <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>           
+           </div>
+         </center>
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -192,7 +188,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     }
 
-    // line 91
+    // line 87
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -201,7 +197,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 92
+        // line 88
         echo "
 <script src=\"javascript/reservationAeroport.js\"></script>
 
@@ -226,7 +222,7 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
     public function getDebugInfo()
     {
-        return array (  205 => 92,  196 => 91,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  201 => 88,  192 => 87,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -258,14 +254,12 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
 
         
     <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary\">
-     <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->
-                
+     <!-- <a class=\"navbar-brand\" href=\"#\">Navbar</a>  -->               
                     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarColor09\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
                     </button>
 
            <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
-
                 <ul class=\"navbar-nav mr-auto\">
                     <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"memorialPageAcceuil\">Acceuil <span class=\"sr-only\">(current)</span></a>
@@ -286,15 +280,13 @@ class __TwigTemplate_7bbf6baa857d1b669d26e13c2d9f1b3bed392461f3a2a20d54586da8d93
     </div>
     </nav> </br>
  </br>
-
-           <center>
-             <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
-                                        <h6 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h6><br>
-             <!--   <p>effectuez le payment</p>    --> 
-            <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>
-            </div>
-            </center>
-
+        <center>
+         <h2><strong>Votre réservation est bien enregistée </strong></h2></br>
+         <h4 style=\"color:green\">Vous avez reçu un mail de confirmation de votre réservation</h4><br>
+               <h4>effectuez le payment</h4>    
+              <a href=\"paiementStripe\" class=\"btn btn-yellow\"  type=\"submit\">payment</a>           
+           </div>
+         </center>
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields

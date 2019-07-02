@@ -149,13 +149,8 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
  </br>
  <center>
  <h4> <U>Veuillez renseigner les infomations demandées.</U></h4> <hr>
-
-               
-            
-                <h5>Le montant de votre transaction est de:</h5></br>
-
-               
-               
+                <h5>Le montant de votre tansaction est de:80euros</h5>
+                      
     
             <form id=\"payment-form\" method=\"post\">
 
@@ -163,10 +158,10 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
                         <div class=\"col-sm-5 col-md-5\">
                             <label>
                                 <span>            
-                                    <B>Prénoms et Nom :</B>
+                                    <B>Prénoms et Nom:</B>
                                 </span>
-                                <input data-stripe=\"name\" name=\"name\" placeholder=\"Prénoms et nom\" size=\"50\" type=\"text\">
-                            </label>
+                                <input data-stripe=\"name\" name=\"name\" placeholder=\"Prénoms et nom\" size=\"50\" type=\"text\" required=\"required\">
+                            </label> 
                         </div>
                     </div>
                     <div class=\"field\">
@@ -174,7 +169,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>Numéro carte</B></span>
-                                <input data-stripe=\"number\" name=\"number\" placeholder=\"Code de carte bleu\" size=\"16\" type=\"text\">
+                                <input data-stripe=\"number\" name=\"number\" placeholder=\"Code de carte bleu\" size=\"16\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -184,13 +179,13 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>Expire en (MM/YY)</B></span>
-                                <input data-stripe=\"exp_month\" name=\"exp_month\" placeholder=\"MM  \" size=\"2\" type=\"text\">
+                                <input data-stripe=\"exp_month\" name=\"exp_month\" placeholder=\"MM  \" size=\"2\" type=\"text\" required>
                             </label>
                             <span>
-                                /
+                                
                             </span>
                             <label>
-                                <input data-stripe=\"exp_year\" name=\"exp_year\" placeholder=\"YYYY\" size=\"2\" type=\"text\">
+                                <input data-stripe=\"exp_year\" name=\"exp_year\" placeholder=\"YYYY\" size=\"2\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -200,7 +195,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>CVC</B></span>
-                                <input data-stripe=\"cvc\" name=\"cvc\" placeholder=\"Cvc\" size=\"3\" type=\"text\">
+                                <input data-stripe=\"cvc\" name=\"cvc\" placeholder=\"Cvc\" size=\"3\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -212,7 +207,6 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                 </form> 
                 </center>
- 
 
 
 
@@ -250,7 +244,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
     }
 
-    // line 149
+    // line 143
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -259,7 +253,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 150
+        // line 144
         echo "<script>
                         var stripe = Stripe('pk_test_LiWH7BI0abhR2hwZncUIwYNZ00NLd9s01W');  
                         var elements = stripe.elements();
@@ -338,7 +332,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
     public function getDebugInfo()
     {
-        return array (  263 => 150,  254 => 149,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
+        return array (  257 => 144,  248 => 143,  113 => 16,  104 => 15,  92 => 11,  83 => 10,  68 => 3,  59 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -397,13 +391,8 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
  </br>
  <center>
  <h4> <U>Veuillez renseigner les infomations demandées.</U></h4> <hr>
-
-               
-            
-                <h5>Le montant de votre transaction est de:</h5></br>
-
-               
-               
+                <h5>Le montant de votre tansaction est de:80euros</h5>
+                      
     
             <form id=\"payment-form\" method=\"post\">
 
@@ -411,10 +400,10 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
                         <div class=\"col-sm-5 col-md-5\">
                             <label>
                                 <span>            
-                                    <B>Prénoms et Nom :</B>
+                                    <B>Prénoms et Nom:</B>
                                 </span>
-                                <input data-stripe=\"name\" name=\"name\" placeholder=\"Prénoms et nom\" size=\"50\" type=\"text\">
-                            </label>
+                                <input data-stripe=\"name\" name=\"name\" placeholder=\"Prénoms et nom\" size=\"50\" type=\"text\" required=\"required\">
+                            </label> 
                         </div>
                     </div>
                     <div class=\"field\">
@@ -422,7 +411,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>Numéro carte</B></span>
-                                <input data-stripe=\"number\" name=\"number\" placeholder=\"Code de carte bleu\" size=\"16\" type=\"text\">
+                                <input data-stripe=\"number\" name=\"number\" placeholder=\"Code de carte bleu\" size=\"16\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -432,13 +421,13 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>Expire en (MM/YY)</B></span>
-                                <input data-stripe=\"exp_month\" name=\"exp_month\" placeholder=\"MM  \" size=\"2\" type=\"text\">
+                                <input data-stripe=\"exp_month\" name=\"exp_month\" placeholder=\"MM  \" size=\"2\" type=\"text\" required>
                             </label>
                             <span>
-                                /
+                                
                             </span>
                             <label>
-                                <input data-stripe=\"exp_year\" name=\"exp_year\" placeholder=\"YYYY\" size=\"2\" type=\"text\">
+                                <input data-stripe=\"exp_year\" name=\"exp_year\" placeholder=\"YYYY\" size=\"2\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -448,7 +437,7 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                             <label>
                                 <span><B>CVC</B></span>
-                                <input data-stripe=\"cvc\" name=\"cvc\" placeholder=\"Cvc\" size=\"3\" type=\"text\">
+                                <input data-stripe=\"cvc\" name=\"cvc\" placeholder=\"Cvc\" size=\"3\" type=\"text\" required>
                             </label>
                         </div>
                     </div>
@@ -460,7 +449,6 @@ class __TwigTemplate_b0613de63ec9a99154a8d90aafac080ceab5351037a4cf06d6d5ee5deda
 
                 </form> 
                 </center>
- 
 
 
 

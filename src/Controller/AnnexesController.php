@@ -74,16 +74,10 @@ class AnnexesController extends AbstractController
      * @Route("/reservationEffectuee", name="reservationEffectuee")
      */
     public function terminusReservationRoute()
-    {
-
-        // fonction gestion de mail ici -->  
-    
+    {         
         return $this->render('royalpalace/reservationEffectuee.html.twig',[
-
         ]);
-
     }  
-
 
     // FONCTION QUI ENVOIE UNE RESERVATION ALLER SIMPLE  ROYAL PALACE BDD 
 
@@ -111,19 +105,15 @@ class AnnexesController extends AbstractController
                       $royal_aller->setDateDepart($dateDepart);
                       $royal_aller->setHeureDepart($heureDeDepart);
                       
-  
+   
                           $em->persist($royal_aller);        
                           $em->flush();   
          
   
           return $this->redirectToRoute('reservationAllerRoyalPalace',['id'=>$royal_aller->getId()]);
-      } 
-      
-
+      }      
    
-    // FONCTION QUI ENVOIE UNE RESERVATION ALLER RETOUR ROYAL PALACE BDD 
-
-    
+    // FONCTION QUI ENVOIE UNE RESERVATION ALLER RETOUR ROYAL PALACE BDD     
      /**
      * @Route("/envoieBddRoyalPalaceAllerRetour", name="envoieBddRoyalPalaceAllerRetour")
      */
@@ -156,11 +146,7 @@ class AnnexesController extends AbstractController
                       
   
                           $em->persist($royal_aller_retour);        
-                          $em->flush();   
-         
-  
+                          $em->flush();             
           return $this->redirectToRoute('reservationAllerRetourRoyalPalace',['id'=>$royal_aller_retour->getId()]);
-    } 
-      
-
+    }      
 }

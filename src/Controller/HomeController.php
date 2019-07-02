@@ -181,6 +181,7 @@ class HomeController extends AbstractController
             'memorial'=>$memorial
         ]);
     }
+
     
                    // FIN CONFIRMATION RESERVATION  ALLER RETOUR      
 
@@ -202,7 +203,7 @@ class HomeController extends AbstractController
      */
     public function envoieMailRoute($nbrePassager, $email, $depart, $destination, $heureDepart, $dateDepart, \Swift_Mailer $mailer)
     {
-        $prix = $nbrePassager <= 4 ? "80€" : "120€";   // condition ternaire  use ...here ;)
+        $prix = $nbrePassager <= 4 ? "80€" : "120€";   
        $msgUser = "Votre reservation a bien été enregistrée\nDepart: " .$depart. 
        "\nDestination: " .$destination. 
        "\nNombre de passagers:" .$nbrePassager.
@@ -258,20 +259,16 @@ class HomeController extends AbstractController
                 $email=$req->get('email');             
                 $tel=$req->get('phone');
                 $dateDepart= new \DateTime($req->get('date_depart_aller'));               
-                $heureDeDepart =$req->get('heure_depart');  // dump($heureDeDepart);die;
-             
+                $heureDeDepart =$req->get('heure_depart');  // dump($heureDeDepart);die;             
                     $memorial_aller->setDepart($depart);
                     $memorial_aller->setDestination($destination);
                     $memorial_aller->setNombrePassager($nbrePassager);
                     $memorial_aller->setEmail($email); 
                     $memorial_aller->setTelephone($tel);
                     $memorial_aller->setDateDeDepart($dateDepart);
-                    $memorial_aller->setHeureDeDepart($heureDeDepart);
-                    
+                    $memorial_aller->setHeureDeDepart($heureDeDepart);                    
                         $em->persist($memorial_aller);        
-                        $em->flush();   
-       
-
+                        $em->flush();          
         return $this->redirectToRoute('confirmation',['id'=>$memorial_aller->getId()]);
     } 
     
@@ -314,32 +311,23 @@ class HomeController extends AbstractController
     }
       // GESTION PAYMENT MEMORIAL STRIPE  @Route("/terminusAllerSimple", name="terminusAllerSimple")
          
-        /**
+     /**
          * @Route("/paiementStripe",name="paiementStripe")
         */
         public function paiementStripe()     //   Request $request)
         {  
                                   
-            \Stripe\Stripe::setApiKey('sk_test_G7XWdB0JDSAVtvhGSbKcyzox00D8CPhvct');               
+            \Stripe\Stripe::setApiKey('sk_test_G7XWdB0JDSAVtvhGSbKcyzox00D8CPhvct');     // stripe key           
             \Stripe\Charge::create(array(
-               'amount' => 5000,
+               'amount' => 8000,
                 'currency' => 'eur',
                 'source'=>('tok_mastercard'),      //$request->request->get('stripeToken'),
                 'description' => 'test de payment',               
                 ));       
-                return $this->render('transport/paiementStripe.html.twig',[
-                  //  'memorial'=> $memorial
-                  // $prix = $nbrePassager <= 4 ? "80€" : "120€"; 
+                return $this->render('transport/paiementStripe.html.twig',[          
+                   
                     ]);
         } 
- /////////////////////////////////////////////////////////////////////////////////////////////////////
-      //  public function paiementStripe()
-     //   {
-
-      //  }
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
         // CONFIRMATION PAYEMENT 
         /**
